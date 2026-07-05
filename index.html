@@ -1,0 +1,5134 @@
+   <!DOCTYPE html>
+   <html lang="id">
+   <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/index.min.js"></script>
+   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+   <title>JB xdear store — Jasa Pembuatan Website & JB all game</title>
+
+   <!-- SEO Meta Tags -->
+   <meta name="description" content="xdear store - Jasa middleman (rekber) terpercaya untuk jual beli akun game, pembuatan website, desain grafis, dan produk digital. Aman, transparan, dan cepat.">
+   <meta name="keywords" content="jasa middleman terpercaya, jasa rekber indonesia, jual akun game, beli akun game, jasa pembuatan website, jasa landing page, produk digital, link in bio premium, admin mc, jasa top up game">
+   <meta name="author" content="xdear store">
+   <link rel="canonical" href="https://xdear.vercel.app/">
+
+   <!-- Open Graph / Facebook & WhatsApp Preview -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://xdear.vercel.app/">
+   <meta property="og:title" content="xdear store - Jasa Rekber & Digital Products Terpercaya">
+   <meta property="og:description" content="Jasa middleman (rekber) terpercaya untuk jual beli akun game, pembuatan website, desain grafis, dan produk digital. Aman, transparan, dan cepat.">
+   <meta property="og:image" content="https://xdear.vercel.app/assets/images/logo/logo.jpeg">
+
+   <!-- Twitter Card -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:url" content="https://xdear.vercel.app/">
+   <meta name="twitter:title" content="xdear store - Jasa Rekber & Digital Products Terpercaya">
+    <meta name="twitter:description" content="Jasa middleman (rekber) terpercaya untuk jual beli akun game, pembuatan website, desain grafis, dan produk digital. Aman, transparan, dan cepat.">
+    <meta name="twitter:image" content="https://xdear.vercel.app/assets/images/logo/logo.jpeg">
+
+   <!-- Favicon -->
+   <link rel="icon" type="image/jpeg" href="assets/images/logo/favicon.png">
+
+   <style>
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+     *, *::before, *::after {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     -webkit-tap-highlight-color: transparent; /* ← tambahkan ini */
+   }
+
+    :root {
+      --primary: #6C63FF;
+      --primary-light: #8B85FF;
+      --primary-dark: #4B44CC;
+      --accent: #00D4FF;
+      --accent2: #FF6B9D;
+      --bg: #0A0A0F;
+      --bg2: #0A0A0F;
+      --bg3: #0A0A0F;
+      --surface: #16162A;
+      --surface2: #1E1E35;
+      --border: rgba(108, 99, 255, 0.15);
+      --text: #F0F0FF;
+      --text-muted: #8888AA;
+      --text-soft: #BBBBD0;
+      --gradient-hero: linear-gradient(135deg, #6C63FF 0%, #00D4FF 50%, #FF6B9D 100%);
+      --gradient-card: linear-gradient(145deg, #16162A, #1E1E35);
+      --glow-primary: 0 0 1px rgba(108, 99, 255, 0.3);
+      --glow-accent: 0 0 1px rgba(0, 212, 255, 0.25);
+      --radius-sm: 8px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      --transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --font: 'Poppins', system-ui, -apple-system, sans-serif;
+    }
+
+   /* =========================
+   POPPINS FONT FAMILY
+   ========================= */
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-Thin.woff2") format("woff2");
+     font-weight: 100;
+     font-style: normal;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-ThinItalic.woff2") format("woff2");
+     font-weight: 100;
+     font-style: italic;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-ExtraLight.woff2") format("woff2");
+     font-weight: 200;
+     font-style: normal;
+    font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-ExtraLightItalic.woff2") format("woff2");
+     font-weight: 200;
+     font-style: italic;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-Light.woff2") format("woff2");
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-LightItalic.woff2") format("woff2");
+     font-weight: 300;
+     font-style: italic;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-Regular.woff2") format("woff2");
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-Italic.woff2") format("woff2");
+     font-weight: 400;
+     font-style: italic;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-Medium.woff2") format("woff2");
+     font-weight: 500;
+     font-style: normal;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-MediumItalic.woff2") format("woff2");
+     font-weight: 500;
+     font-style: italic;
+     font-display: swap;
+   }
+
+   @font-face {
+    font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-Bold.woff2") format("woff2");
+     font-weight: 700;
+     font-style: normal;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-BoldItalic.woff2") format("woff2");
+     font-weight: 700;
+     font-style: italic;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-ExtraBold.woff2") format("woff2");
+     font-weight: 800;
+     font-style: normal;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-ExtraBoldItalic.woff2") format("woff2");
+     font-weight: 800;
+     font-style: italic;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-Black.woff2") format("woff2");
+     font-weight: 900;
+     font-style: normal;
+     font-display: swap;
+   }
+
+   @font-face {
+     font-family: "Poppins";
+     src: url("assets/fonts/poppins/Poppins-BlackItalic.woff2") format("woff2");
+     font-weight: 900;
+     font-style: italic;
+     font-display: swap;
+   }
+
+    html {
+     scroll-behavior: smooth;
+     scroll-padding-top: 80px;
+    }
+
+    body {
+      font-family: "Poppins" !important;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+   h1 {
+     font-size: 56px;
+     font-weight: 700;
+     line-height: 1.2;
+   }
+
+   h2 {
+     font-size: 44px;
+     font-weight: 700;
+     line-height: 1.2;
+   }
+
+   h3 {
+     font-size: 36px;
+     font-weight: 500;
+     line-height: 1.3;
+   }
+
+   h4 {
+     font-size: 30px;
+     font-weight: 500;
+     line-height: 1.3;
+   }
+
+   h5 {
+     font-size: 24px;
+     font-weight: 500;
+     line-height: 1.4;
+   }
+
+   h6 {
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 1.4;
+   }
+
+   p {
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 1.75;
+     color: rgba(255, 255, 255, 0.75);
+   }
+
+   small {
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 1.6;
+   }
+
+    /* ============================================================
+       TYPOGRAPHY
+    ============================================================ */
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    h1 { font-size: clamp(2.4rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(1.8rem, 4vw, 3rem); }
+    h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
+
+    p { color: var(--text-soft); line-height: 1.75; }
+
+    .gradient-text {
+      background: var(--gradient-hero);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ============================================================
+       UTILITY
+    ============================================================ */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      background: rgba(0, 212, 255, 0.08);
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse-dot 2s ease infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.7); }
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============================================================
+       NAVBAR
+    ============================================================ */
+   #navbar {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+      z-index: 1000;
+     padding: 20px 0;
+     background: rgba(10, 10, 15, 0.35);
+     backdrop-filter: blur(1px);
+     -webkit-backdrop-filter: blur(1px);
+     transition: var(--transition);
+   }
+
+   #navbar.scrolled {
+     background: rgba(10, 10, 15, 0.55);
+     backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);
+     border-bottom: 1px solid var(--border);
+     padding: 14px 0;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+   }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--text);
+      letter-spacing: -0.03em;
+    }
+
+    .logo-mark {
+      width: 34px;
+      height: 34px;
+      background: var(--gradient-hero);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 900;
+      color: white;
+      flex-shrink: 0;
+      box-shadow: 0 1px 1px rgba(108, 99, 255, 0.4);
+    }
+
+    /* Nav links desktop */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 100px;
+      position: relative;
+      transition: var(--transition);
+      display: block;
+      overflow: hidden;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 6px;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+      width: calc(100% - 32px);
+      height: 2px;
+      background: var(--gradient-hero);
+      border-radius: 2px;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: center;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      transform: translateX(-50%) scaleX(1);
+    }
+
+   .nav-cta {
+     background: rgba(22,22,42,0.92) !important;
+     border: 1px solid rgba(255,255,255,0.10) !important;
+     box-shadow:
+     0 4px 16px rgba(0,0,0,0.18),
+      inset 0 1px 1px rgba(255,255,255,0.08) !important;
+     color: var(--text) !important;
+     font-weight: 600 !important;
+     padding: 9px 22px !important;
+     border-radius: 100px !important;
+     margin-left: 8px;
+     overflow: hidden;
+     position: relative;
+     transition: var(--transition) !important;
+   }
+
+    .nav-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%);
+      transform: translateX(-100%);
+      transition: transform 0.6s ease;
+    }
+
+    .nav-cta:hover::before {
+      transform: translateX(100%);
+    }
+
+    .nav-cta:hover {
+      background: rgba(255,255,255,0.14) !important;
+      border-color: rgba(255,255,255,0.3) !important;
+      transform: translateY(-2px) !important;
+      box-shadow:
+        0 8px 32px rgba(0,0,0,0.25),
+        inset 0 1px 1px rgba(255,255,255,0.3),
+        inset 0 -1px 1px rgba(0,0,0,0.15) !important;
+    }
+
+    .nav-cta:active {
+      transform: translateY(0) scale(0.97) !important;
+    }
+
+    .nav-cta::after { display: none !important; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+      transition: var(--transition);
+      background: none;
+      border: none;
+    }
+
+    .hamburger:hover { background: var(--surface); }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* Mobile menu */
+     .mobile-menu {
+     display: block;
+     position: fixed;
+     top: 70px;
+     left: 12px;
+     right: 12px;
+     background: rgba(15, 15, 26, 0.95);
+     backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);
+     border: 1px solid var(--border);
+     border-radius: var(--radius-lg);
+     padding: 16px;
+     z-index: 999;
+     pointer-events: none;
+     visibility: hidden;
+     transition: visibility 0s linear 0.5s; /* ← tunggu animasi link selesai dulu */
+   }
+
+     .mobile-menu a {
+     display: block;
+     padding: 13px 16px;
+     color: var(--text-soft);
+     text-decoration: none;
+     font-weight: 500;
+     border-radius: var(--radius-sm);
+     transition: background 0.2s, color 0.2s, padding-left 0.2s;
+     opacity: 0;
+     transform: translateY(-16px);
+     transition: background 0.2s, color 0.2s, padding-left 0.2s,
+              opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   .mobile-menu a:hover {
+     background: var(--surface);
+     color: var(--text);
+     padding-left: 22px;
+   }
+
+     .mobile-menu .mobile-cta {
+      margin-top: 8px;
+      color: var(--text) !important;
+      text-align: center;
+      font-weight: 600;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.08) !important;
+      border: 1px solid rgba(255,255,255,0.18) !important;
+      position: relative;
+      overflow: hidden;
+    }
+
+     .mobile-menu.open {
+     pointer-events: all;
+     visibility: visible;
+     transition: visibility 0s linear 0s; /* ← langsung visible saat buka */
+   }
+
+     .mobile-menu.open a {
+     opacity: 1;
+     transform: translateY(0);
+   }
+
+    /* ============================================================
+       HERO SECTION
+    ============================================================ */
+    #home {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 100px;
+    }
+
+   #home {
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes hero-bg-spin {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Background blobs */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+   .blob {
+     position: absolute;
+     border-radius: 50%;
+     filter: blur(25px);
+     opacity: 0.22;
+     animation: float-blob 8s ease-in-out infinite;
+   }
+
+    .blob-1 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, #6C63FF, transparent);
+      top: -100px;
+      left: -100px;
+      animation-delay: 0s;
+    }
+
+    .blob-2 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, #00D4FF, transparent);
+      top: 200px;
+      right: -80px;
+      animation-delay: -3s;
+    }
+
+    .blob-3 {
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, #FF6B9D, transparent);
+      bottom: 100px;
+      left: 35%;
+      animation-delay: -6s;
+    }
+
+    @keyframes float-blob {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(20px, -30px) scale(1.05); }
+      66% { transform: translate(-15px, 20px) scale(0.95); }
+    }
+
+    /* Grid noise overlay */
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(108, 99, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(108, 99, 255, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+    }
+
+    .hero-left {}
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--primary-light);
+      background: rgba(108, 99, 255, 0.1);
+      border: 1px solid rgba(108, 99, 255, 0.25);
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+      animation: fade-in-up 0.8s ease forwards;
+    }
+
+    .hero-tag .tag-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--primary-light);
+      border-radius: 50%;
+    }
+
+    .hero-headline {
+      margin-bottom: 24px;
+      animation: fade-in-up 0.8s ease 0.1s both;
+    }
+
+    .hero-headline .line-muted {
+      color: var(--text-muted);
+      display: block;
+    }
+
+    .hero-sub {
+      font-size: 1.08rem;
+      max-width: 440px;
+      margin-bottom: 40px;
+      animation: fade-in-up 0.8s ease 0.2s both;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fade-in-up 0.8s ease 0.3s both;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,0.1);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover::before { opacity: 1; }
+
+    .btn-primary {
+      background: var(--gradient-hero);
+      color: white;
+      box-shadow: 0 6px 28px rgba(108, 99, 255, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 1px 1px rgba(108, 99, 255, 0.55);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-soft);
+      border: 1px solid var(--border);
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(108, 99, 255, 0.5);
+      color: var(--text);
+      background: rgba(108, 99, 255, 0.05);
+      transform: translateY(-1px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 52px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      animation: fade-in-up 0.8s ease 0.4s both;
+    }
+
+    .stat-item {}
+
+    .stat-number {
+      font-size: 1.6rem;
+      font-weight: 800;
+      background: var(--gradient-hero);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    /* Hero right — mockup */
+    .hero-right {
+      display: flex;
+      justify-content: flex-end;
+      animation: fade-in-up 0.9s ease 0.2s both;
+    }
+
+    .hero-mockup {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    /* Floating badges */
+    .mockup-badge {
+      position: absolute;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 14px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+      white-space: nowrap;
+      z-index: 10;
+      animation: float-badge 4s ease-in-out infinite;
+    }
+
+    .badge-top-left {
+      top: -18px;
+      left: -20px;
+      animation-delay: 0s;
+    }
+
+    .badge-bottom-right {
+      bottom: -18px;
+      right: -20px;
+      animation-delay: -2s;
+    }
+
+    @keyframes float-badge {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .badge-icon {
+      font-size: 1rem;
+    }
+
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+   .btn-glass {
+     position: relative;
+     background: rgba(255,255,255,0.08);
+     backdrop-filter: blur(1px);
+     -webkit-backdrop-filter: blur(1px);
+     border: 1px solid rgba(255,255,255,0.18);
+     box-shadow:
+     0 4px 24px rgba(0,0,0,0.2),
+     inset 0 1px 1px rgba(255,255,255,0.25),
+     inset 0 -1px 1px rgba(0,0,0,0.15);
+     color: var(--text);
+     overflow: hidden;
+   }
+
+    .btn-glass::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%);
+      transform: translateX(-100%);
+      transition: transform 0.6s ease;
+    }
+
+    .btn-glass:hover::before {
+      transform: translateX(100%);
+    }
+
+    .btn-glass:hover {
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+      box-shadow:
+        0 8px 32px rgba(0,0,0,0.25),
+        inset 0 1px 1px rgba(255,255,255,0.3),
+        inset 0 -1px 1px rgba(0,0,0,0.15);
+    }
+
+    .btn-glass:active {
+      transform: translateY(0) scale(0.97);
+    }
+
+/* ============================================================
+       TYPING ANIMATION
+    ============================================================ */
+    .hero-typing {
+      font-size: 2.0rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 12px 0 20px;
+      min-height: 1.6em;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .typing-cursor {
+      display: inline-block;
+      color: var(--accent);
+      animation: blink-cursor 0.7s step-end infinite;
+      font-weight: 300;
+    }
+
+    @keyframes blink-cursor {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+
+   /* ============================================================
+       ABOUT BANNER & PROFIL
+    ============================================================ */
+    .about-banner-wrap {
+      position: relative;
+      width: 100%;
+      margin-bottom: 80px;
+      display: flex;
+      justify-content: center;
+    }
+
+   .about-banner {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+    }
+
+   .about-banner::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 50%;
+     background: linear-gradient(to top, transparent, #0A0A0F);
+     pointer-events: none;
+    z-index: 1;
+   }
+
+   .about-banner::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to bottom, transparent, #0A0A0F);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .about-banner-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about-profil-wrap {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #888888;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+      z-index: 2;
+    }
+
+    .about-profil-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ============================================================
+       SECTION BASE
+    ============================================================ */
+    section {
+      padding: 100px 0;
+    }
+
+    section:nth-of-type(even) {
+      background: var(--bg2);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 64px;
+    }
+    
+    #service .section-header p {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 24px;
+    }
+    
+    .section-header h2 { margin-bottom: 16px; }
+
+    .section-header p { font-size: 1.05rem; }
+
+   /* ============================================================
+       MARQUEE SECTION
+    ============================================================ */
+    #marquee-section {
+      background: var(--bg);
+      padding: 60px 0;
+      overflow: hidden;
+    }
+
+    .marquee-label {
+      margin-bottom: 16px;
+    }
+
+    .marquee-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+    }
+
+    .marquee-gap {
+      height: 40px;
+    }
+
+    .marquee-wrapper {
+      overflow: hidden;
+      width: 100%;
+      mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+
+    .marquee-track {
+      display: flex;
+      gap: 16px;
+      width: max-content;
+      padding: 8px 0;
+    }
+
+    .marquee-left {
+      animation: marquee-to-left 25s linear infinite;
+    }
+
+    .marquee-right {
+      animation: marquee-to-right 25s linear infinite;
+    }
+
+    @keyframes marquee-to-left {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @keyframes marquee-to-right {
+      0%   { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+
+    .marquee-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 8px 20px 8px 8px;
+      flex-shrink: 0;
+      transition: var(--transition);
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .marquee-pill:hover {
+      border-color: rgba(108,99,255,0.4);
+      background: var(--surface2);
+      transform: translateY(-2px);
+    }
+
+    .pill-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 2px solid var(--border);
+    }
+
+    .pill-text {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-soft);
+    }
+
+    /* ============================================================
+       ABOUT SECTION
+    ============================================================ */
+    #about {
+      background: var(--bg2);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-left {}
+
+    .about-left p {
+      margin-bottom: 20px;
+      font-size: 1.02rem;
+    }
+
+    .about-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+   .pill {
+     padding: 8px 18px;
+     border-radius: 100px;
+     font-size: 0.82rem;
+     font-weight: 600;
+     background: var(--surface);
+     border: 1px solid var(--border);
+     color: var(--text-soft);
+     transition: var(--transition);
+     display: flex;
+     align-items: center;
+     gap: 0.5em; /* 1 spasi */
+   }
+
+    .pill:hover {
+      border-color: var(--primary);
+      color: var(--primary-light);
+      background: rgba(108,99,255,0.08);
+    }
+
+    .about-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .about-card {
+      background: var(--gradient-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+      cursor: default;
+    }
+
+    .about-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--primary), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .about-card:hover::before { opacity: 1; }
+    
+    .about-card.tapped {
+     transform: translateY(-4px);
+     border-color: rgba(108,99,255,0.35);
+     box-shadow: 0 1px 1px rgba(0,0,0,0.3), var(--glow-primary);
+   }
+
+     .about-card.tapped::before {
+     opacity: 1;
+   }
+
+   .service-card.tapped {
+     transform: translateY(-6px);
+     border-color: rgba(108,99,255,0.4);
+     box-shadow: 0 1px 1px rgba(0,0,0,0.35), var(--glow-primary);
+   }
+
+   .review-card.tapped {
+     transform: translateY(-4px);
+     border-color: rgba(108,99,255,0.3);
+     box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+   }
+    
+    .about-card:active {
+     transform: translateY(-4px);
+     border-color: rgba(108,99,255,0.35);
+     box-shadow: 0 1px 1px rgba(0,0,0,0.3), var(--glow-primary);
+   }
+
+   .about-card:active::before {
+     opacity: 1;
+   }
+
+    .about-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(108,99,255,0.12);
+      border: 1px solid rgba(108,99,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+    }
+
+    .about-card h4 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .about-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .about-card.highlight {
+      grid-column: span 2;
+      background: linear-gradient(135deg, rgba(108,99,255,0.12), rgba(0,212,255,0.06));
+      border-color: rgba(108,99,255,0.25);
+    }
+
+/* ============================================================
+       EXPAND CARDS
+    ============================================================ */
+    .expand-cards-wrapper {
+      width: 100%;
+      margin-top: 40px;
+      grid-column: 1 / -1;
+    }
+
+    .expand-cards {
+      display: flex;
+      gap: 6px;
+      height: 560px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .expand-card {
+      border-radius: 32px;
+      cursor: pointer;
+      transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  border-radius 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      overflow: hidden;
+      width: 72px;
+      height: 560px;
+      flex-shrink: 0;
+      background-color: var(--surface2);
+    }
+
+    .expand-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+    }
+
+    .expand-card.active {
+      width: 300px;
+      border-radius: 32px;
+    }
+
+    .expand-cards:hover .expand-card {
+      width: 72px;
+      border-radius: 32px;
+    }
+
+    .expand-cards .expand-card:hover {
+      width: 300px;
+      border-radius: 32px;
+    }
+
+    @media (max-width: 768px) {
+      .expand-cards {
+        height: 320px;
+        gap: 4px;
+      }
+
+   .expand-card {
+     width: 40px;
+     height: 320px;
+     border-radius: 20px;
+   }
+
+   .expand-card.active {
+      width: 160px;
+     border-radius: 20px;
+   }
+
+   .expand-cards:hover .expand-card {
+      width: 40px;
+   }
+
+   .expand-cards .expand-card:hover {
+     width: 160px;
+     }
+   }
+
+   .hero-typing {
+        justify-content: center;
+      }
+
+   @media (min-width: 769px) {
+      .hero-typing {
+        justify-content: flex-start;
+      }
+    }
+
+#expand {
+      background: var(--bg2);
+      padding-bottom: 0;
+    }
+
+    .expand-cards-wrapper {
+      width: 100%;
+      margin-top: 40px;
+      padding: 0;
+    }
+
+/* ============================================================
+       LIGHTBOX
+    ============================================================ */
+    .lightbox-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .lightbox-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .lightbox-box {
+      position: relative;
+      width: 85%;
+      max-width: 400px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+      transform: scale(0.85);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .lightbox-overlay.active .lightbox-box {
+      transform: scale(1);
+    }
+
+    .lightbox-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(180,180,180,0.7);
+      backdrop-filter: blur(4px);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: var(--transition);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(200,200,200,0.9);
+      transform: scale(1.1);
+    }
+
+    /* ============================================================
+       SERVICE SECTION
+    ============================================================ */
+    #service {
+      background: var(--bg);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--gradient-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: var(--transition);
+      group: true;
+    }
+
+    .service-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius-lg);
+      opacity: 0;
+      background: linear-gradient(135deg, rgba(108,99,255,0.06), rgba(0,212,255,0.04));
+      transition: opacity 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(108,99,255,0.4);
+      box-shadow: 0 1px 1px rgba(0,0,0,0.35), 0 0 0 1px rgba(108,99,255,0.15), var(--glow-primary);
+    }
+
+    .service-card:hover::after { opacity: 1; }
+
+    .service-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-icon-wrap {
+      transform: scale(1.1) rotate(-3deg);
+    }
+
+    .service-card h3 {
+      margin-bottom: 12px;
+      color: var(--text);
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-arrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--primary-light);
+      margin-top: 20px;
+      position: relative;
+      z-index: 1;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-arrow {
+      gap: 10px;
+    }
+    
+    .service-card:active {
+     transform: translateY(-6px);
+     border-color: rgba(108,99,255,0.4);
+     box-shadow: 0 1px 1px rgba(0,0,0,0.35), var(--glow-primary);
+   }
+
+   /* ============================================================
+       SERVICE SLIDER
+    ============================================================ */
+    #service {
+      overflow: hidden;
+    }
+
+    .service-slider-wrapper {
+      position: relative;
+      width: 100%;
+      padding: 40px 0 60px;
+      overflow: hidden;
+    }
+
+    .service-slider {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: grab;
+      user-select: none;
+      padding: 20px 0;
+    }
+
+    .service-slider:active {
+      cursor: grabbing;
+    }
+
+    .service-slide {
+      flex-shrink: 0;
+      width: 340px;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                  opacity 0.5s ease;
+      opacity: 0.5;
+      transform: scale(0.78);
+    }
+
+    .service-slide.active {
+      opacity: 1;
+      transform: scale(1.08);
+      z-index: 2;
+    }
+
+    .service-slide-card {
+      position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #111122;
+      border: 1px solid rgba(255,255,255,0.08);
+      min-height: 480px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slide-mesh {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 20%, var(--mesh-color) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 80%, var(--mesh-color) 0%, transparent 50%),
+        radial-gradient(ellipse at 60% 50%, rgba(255,255,255,0.04) 0%, transparent 60%);
+      opacity: 0.55;
+      filter: blur(1px);
+      z-index: 0;
+    }
+
+    .slide-icon-area {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px 32px;
+      padding-top: 80px;
+    }
+
+    .slide-body {
+      position: relative;
+      z-index: 1;
+      padding: 24px 28px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.6) 40%);
+      justify-content: flex-end;
+    }
+
+    .slide-body h3 {
+      font-size: 1.25rem;
+      color: white;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .slide-body p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+    }
+
+   .slide-arrow {
+     display: inline-flex;
+     align-items: center;
+     gap: 6px;
+     font-size: 0.85rem;
+     font-weight: 600;
+     color: white;
+     background: rgba(255,255,255,0.12);
+     border: 1px solid rgba(255,255,255,0.18);
+     padding: 10px 20px;
+     border-radius: 100px;
+     margin-top: 8px;
+     width: fit-content;
+     transition: var(--transition);
+     cursor: pointer;
+   }
+
+    .service-slide.active .slide-arrow:hover {
+      background: rgba(255,255,255,0.25);
+    }
+
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 32px;
+    }
+
+    .slider-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .slider-dot.active {
+      background: var(--primary);
+      width: 24px;
+      border-radius: 4px;
+    }
+
+   .slider-nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 0;
+    }
+
+    .slider-nav-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text);
+      transition: var(--transition);
+      flex-shrink: 0;
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+    }
+    }
+
+    .slider-nav-btn:hover {
+      background: rgba(108,99,255,0.1);
+      border-color: rgba(108,99,255,0.4);
+      color: var(--primary-light);
+      transform: scale(1.08);
+    }
+
+    .slider-nav-btn:active {
+      transform: scale(0.95);
+    }
+
+   /* ============================================================
+       PRICING SECTION
+    ============================================================ */
+    #pricing {
+      background: var(--bg2);
+      overflow: hidden;
+    }
+
+    .pricing-slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+      padding: 40px 0 20px;
+      mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+
+    .pricing-track {
+      display: flex;
+      gap: 24px;
+      width: max-content;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: grab;
+      user-select: none;
+      padding: 20px 0;
+    }
+
+    .pricing-track:active {
+      cursor: grabbing;
+    }
+
+    .pricing-slide {
+      flex-shrink: 0;
+      width: 300px;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                  opacity 0.5s ease;
+      opacity: 0.5;
+      transform: scale(0.78);
+    }
+
+    .pricing-slide.active {
+      opacity: 1;
+      transform: scale(1.08);
+      z-index: 2;
+    }
+
+    .pricing-card {
+      background: var(--gradient-card);
+      border-radius: 20px;
+      padding: 0 0 28px 0;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pricing-label {
+      width: 50%;
+      padding: 10px;
+      color: white;
+      border-radius: 0 15px 15px 0;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      position: absolute;
+      top: 24px;
+      left: 0px;
+    }
+
+   .pricing-label-basic { background: linear-gradient(135deg, #00D4FF 10%, #38BDF8 50%, #3B82F6) !important; }
+    .pricing-label-standard { background: linear-gradient(135deg, #8B85FF 10%, #6C63FF 50%, #4B44CC) !important; }
+    .pricing-label-premium { background: linear-gradient(135deg, #FF6B9D 10%, #EC4899 50%, #BE185D) !important; }
+    .pricing-label-special { background: linear-gradient(135deg, #A855F7 10%, #7C3AED 50%, #4C1D95) !important; }
+    .pricing-label-max { background: linear-gradient(135deg, #06B6D4 10%, #0891B2 50%, #155E75) !important; }
+
+    .pricing-btn-basic { background: linear-gradient(135deg, #00D4FF 10%, #38BDF8 50%, #3B82F6) !important; }
+    .pricing-btn-standard { background: linear-gradient(135deg, #8B85FF 10%, #6C63FF 50%, #4B44CC) !important; }
+    .pricing-btn-premium { background: linear-gradient(135deg, #FF6B9D 10%, #EC4899 50%, #BE185D) !important; }
+    .pricing-btn-special { background: linear-gradient(135deg, #A855F7 10%, #7C3AED 50%, #4C1D95) !important; }
+    .pricing-btn-max { background: linear-gradient(135deg, #06B6D4 10%, #0891B2 50%, #155E75) !important; }
+
+    .pricing-check-basic { background: linear-gradient(135deg, #00D4FF 10%, #38BDF8 50%, #3B82F6) !important; }
+    .pricing-check-standard { background: linear-gradient(135deg, #A78BFA 10%, #8B5CF6 50%, #7C3AED) !important; }
+    .pricing-check-premium { background: linear-gradient(135deg, #FF6B9D 10%, #EC4899 50%, #BE185D) !important; }
+    .pricing-check-special { background: linear-gradient(135deg, #A855F7 10%, #7C3AED 50%, #4C1D95) !important; }
+    .pricing-check-max { background: linear-gradient(135deg, #06B6D4 10%, #0891B2 50%, #155E75) !important; }
+
+    .pricing-price {
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+      padding: 100px 24px 0;
+      margin-bottom: 50px;
+      justify-content: center;
+    }
+
+    .price-currency {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .price-amount {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .pricing-desc {
+      font-size: 0.82rem;
+      line-height: 1.65;
+      color: white;
+      padding: 0 24px;
+      margin-bottom: 50px;
+    }
+
+    .pricing-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0 24px;
+      margin-bottom: 24px;
+      flex: 1;
+    }
+
+    .pricing-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      line-height: 1.4;
+    }
+
+    .pricing-check {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .pricing-btn {
+      display: block;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 14px 28px;
+      border-radius: 100px;
+      text-decoration: none;
+      margin: 0 24px;
+      transition: var(--transition);
+      letter-spacing: 0.03em;
+    }
+
+    .pricing-btn:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+      box-shadow: 0 1px 1px rgba(212,160,23,0.4);
+    }
+
+    .pricing-nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .pricing-nav-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text);
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: var(--transition);
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+    }
+    }
+
+    .pricing-nav-btn:hover {
+      background: rgba(108,99,255,0.1);
+      border-color: rgba(108,99,255,0.4);
+      color: var(--primary-light);
+      transform: scale(1.08);
+    }
+
+    .pricing-nav-btn:active {
+      transform: scale(0.95);
+    }
+
+    .pricing-dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .pricing-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .pricing-dot.active {
+      background: var(--primary);
+      width: 24px;
+      border-radius: 4px;
+    }
+
+   .pricing-subdesc {
+      font-size: 0.75rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      padding: 0 24px;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+   /* ============================================================
+       CARA KERJA MC — HORIZONTAL STEPPER
+    ============================================================ */
+    #carakerja {
+      background: var(--bg2);
+    }
+
+    .ck-stepper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+
+    .ck-stepper-item {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .ck-stepper-item.active {
+      background: var(--gradient-hero);
+      border-color: transparent;
+      color: white;
+      transform: scale(1.15);
+      box-shadow: var(--glow-primary);
+    }
+
+    .ck-stepper-line {
+      width: 24px;
+      height: 2px;
+      background: var(--border);
+      flex-shrink: 0;
+    }
+
+    .ck-glass-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+   .ck-glass-card {
+     width: 100%;
+     max-width: 320px;
+     aspect-ratio: 5/5;
+     background: rgba(22, 22, 42, 0.92);
+     border: 1px solid rgba(255,255,255,0.08);
+     border-radius: var(--radius-xl);
+     box-shadow:
+     0 12px 32px rgba(0,0,0,0.25),
+     inset 0 1px 1px rgba(255,255,255,0.08);
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+
+    .ck-glass-img {
+      width: 50%;
+      height: 50;
+      min-height: 10px;
+      object-fit: contain;
+      opacity: 0;
+      transform: scale(0.7);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      animation: float-mockup 2.5s ease-in-out infinite;
+      border-radius: 0px;
+    }
+
+    .ck-glass-img.loaded {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .ck-glass-img.loaded {
+      opacity: 1;
+    }
+
+    .ck-info-text {
+      text-align: center;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+
+    .ck-info-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      animation: fade-in-up 0.4s ease;
+    }
+
+    .ck-info-desc {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: var(--text-soft);
+      animation: fade-in-up 0.4s ease 0.1s both;
+    }
+
+    .ck-nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .ck-nav-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text);
+      transition: var(--transition);
+      -webkit-tap-highlight-color: transparent;
+      outline: none;
+    }
+    }
+
+    .ck-nav-btn:hover {
+      background: rgba(108,99,255,0.1);
+      border-color: rgba(108,99,255,0.4);
+      color: var(--primary-light);
+      transform: scale(1.08);
+    }
+
+    .ck-nav-btn:active {
+      background: rgba(108,99,255,0.1);
+      border-color: rgba(108,99,255,0.4);
+      color: var(--primary-light);
+      transform: scale(1.08);
+    }
+
+   /* ============================================================
+       FEE ADMIN GLASS TABLE
+    ============================================================ */
+    .fee-glass-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 56px;
+    }
+
+   .fee-glass-card {
+     width: 100%;
+     max-width: 480px;
+     background: rgba(22, 22, 42, 0.92);
+     border: 1px solid rgba(255,255,255,0.08);
+     border-radius: var(--radius-xl);
+     box-shadow:
+     0 12px 32px rgba(0,0,0,0.25),
+     inset 0 1px 1px rgba(255,255,255,0.08);
+     padding: 28px 24px;
+   }
+
+    .fee-header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .fee-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .fee-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .fee-table {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .fee-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 4px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.85rem;
+    }
+
+    .fee-row:last-child {
+      border-bottom: none;
+    }
+
+    .fee-row span:first-child {
+      color: var(--text-soft);
+    }
+
+    .fee-row span:last-child {
+      color: var(--primary-light);
+      font-weight: 700;
+    }
+
+    .fee-row-header {
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      padding-bottom: 14px;
+      margin-bottom: 4px;
+    }
+
+    .fee-row-header span {
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .fee-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      align-items: center;
+    }
+
+    .fee-footer p {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    @media (max-width: 480px) {
+      .fee-row {
+        font-size: 0.78rem;
+      }
+    }
+
+   /* ============================================================
+       FEE ADMIN — SCROLL REVEAL STAGGER
+    ============================================================ */
+    .fee-fade {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .fee-fade.visible {
+      opacity: 1;
+    }
+
+    .fee-stagger {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .fee-stagger.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+   /* ============================================================
+       REVIEW SECTION
+    ============================================================ */
+    #review {
+      background: var(--bg2);
+      overflow: hidden;
+      padding: 100px 0;
+    }
+
+    .review-track-wrapper {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+
+    .review-track {
+      display: flex;
+      gap: 24px;
+      width: max-content;
+      animation: scroll-left 50s linear infinite;
+      padding: 12px 0;
+    }
+
+    @keyframes scroll-left {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .review-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+      width: 340px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .review-card::before {
+      content: '"';
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      font-size: 5rem;
+      line-height: 1;
+      color: var(--primary);
+      opacity: 0.1;
+      font-family: Georgia, serif;
+      font-weight: 700;
+    }
+
+    .review-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(108,99,255,0.3);
+      box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+
+    .review-card:active {
+      transform: translateY(-4px);
+      border-color: rgba(108,99,255,0.3);
+      box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    }
+
+    .review-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 16px;
+    }
+
+    .star {
+      color: #FFBD2E;
+      font-size: 0.9rem;
+    }
+
+    .review-text {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--text-soft);
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: auto;
+    }
+
+    .author-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .av-purple     { background: linear-gradient(135deg, #6C63FF, #4B44CC); }
+    .av-cyan       { background: linear-gradient(135deg, #00D4FF, #38BDF8); }
+    .av-pink       { background: linear-gradient(135deg, #FF6B9D, #E11D48); }
+    .av-violet     { background: linear-gradient(135deg, #8B85FF, #6C63FF); }
+    .av-deep-cyan  { background: linear-gradient(135deg, #00A3C4, #0077B6); }
+    .av-soft-pink  { background: linear-gradient(135deg, #FB6F92, #FF6B9D); }
+
+    .author-info .author-name {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+
+    .author-info .author-role {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+   /* ============================================================
+       FAQ SECTION
+    ============================================================ */
+    #faq {
+      background: var(--bg);
+    }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item:hover {
+      border-color: rgba(108,99,255,0.35);
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-family: var(--font);
+      transition: var(--transition);
+    }
+
+    .faq-question:hover {
+      color: var(--primary-light);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                  padding 0.5s ease,
+                  opacity 0.5s ease;
+      padding: 0 24px;
+      opacity: 0;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0 24px;
+      opacity: 1;
+    }
+
+    .faq-answer p {
+      font-size: 0.92rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      padding-bottom: 20px;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0 24px;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .faq-item.open {
+      border-color: rgba(108,99,255,0.35);
+      box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    }
+
+   /* ============================================================
+       CTA SECTION
+    ============================================================ */
+    #cta {
+      background: var(--bg2);
+    }
+
+    .cta-wrapper {
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .cta-header h2 {
+      margin-bottom: 16px;
+    }
+
+    .cta-desc {
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 520px;
+    }
+
+    .cta-contacts {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .cta-contact-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .cta-contact-card:not(.disabled):hover {
+      border-color: rgba(37,211,102,0.4);
+      box-shadow: 0 1px 1px rgba(37,211,102,0.1);
+      transform: translateY(-2px);
+    }
+
+    .cta-contact-card.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .cta-contact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .cta-contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      text-align: left;
+    }
+
+    .cta-contact-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .cta-contact-number {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .cta-warning {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .cta-warning-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(108,99,255,0.06);
+      border: 1px solid rgba(108,99,255,0.15);
+      border-radius: var(--radius);
+      padding: 12px 20px;
+    }
+
+    .cta-warning-item p {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-soft);
+      letter-spacing: 0.03em;
+    }
+
+    .cta-warning-item:first-child {
+      border-color: rgba(251,146,60,0.25);
+      background: rgba(251,146,60,0.06);
+    }
+
+    .cta-warning-item:first-child p {
+      color: #FB923C;
+    }
+
+    .cta-warning-item:last-child p {
+      color: var(--primary-light);
+    }
+
+   .cta-warning-item {
+      transition: var(--transition);
+      cursor: default;
+    }
+
+    .cta-warning-item:first-child:active,
+    .cta-warning-item:first-child.tapped {
+      transform: scale(0.97);
+      background: rgba(251,146,60,0.12);
+      box-shadow: 0 0 1px rgba(251,146,60,0.2);
+    }
+
+    .cta-warning-item:last-child:active,
+    .cta-warning-item:last-child.tapped {
+      transform: scale(0.97);
+      background: rgba(108,99,255,0.12);
+      box-shadow: 0 0 1px rgba(108,99,255,0.2);
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      background: var(--bg3);
+      border-top: 1px solid var(--border);
+      padding: 64px 0 32px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand .nav-logo {
+      margin-bottom: 16px;
+      display: inline-flex;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      max-width: 280px;
+      line-height: 1.7;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .social-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .social-btn:hover {
+      background: rgba(108,99,255,0.1);
+      border-color: rgba(108,99,255,0.4);
+      color: var(--primary-light);
+      transform: translateY(-2px);
+    }
+
+    .footer-col h5 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-col ul a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-col ul a::before {
+      content: '';
+      width: 0;
+      height: 1px;
+      background: var(--primary);
+      transition: width 0.25s;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--primary-light);
+    }
+
+    .footer-col ul a:hover::before { width: 14px; }
+
+    .footer-bottom {
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+    }
+
+    .footer-badges {
+      display: flex;
+      gap: 8px;
+    }
+
+    .footer-badge {
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+   .footer-payment {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .payment-logo {
+      width: 56px;
+      height: 32px;
+      object-fit: contain;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 4px 6px;
+      transition: var(--transition);
+    }
+
+    .payment-logo:hover {
+      border-color: rgba(108,99,255,0.4);
+      transform: translateY(-2px);
+    }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1024px) {
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 769px) {
+      .about-banner-wrap {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links,
+      .nav-cta-wrap { display: none; }
+      
+      .hero-mockup-img {
+        margin-top: 24px;
+      }
+
+      .hero-mockup-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-mockup-img img {
+      animation: float-mockup 3s ease-in-out infinite;
+    }
+
+    .about-banner {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+      }
+
+   .about-banner-wrap {
+        display: block;
+      }
+
+    @keyframes float-mockup {
+      0%, 100% { transform: translateY(0px); }
+      50%       { transform: translateY(-16px); }
+    }
+
+      .hero-mockup-img img {
+        width: 85%;
+        margin: 0 auto;
+        animation: float-mockup 3s ease-in-out infinite;
+      }
+
+      .hamburger { display: flex; }
+
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        text-align: center;
+      }
+
+      .hero-sub { margin-left: auto; margin-right: auto; }
+
+      .hero-actions { justify-content: center; }
+
+      .hero-stats { justify-content: center; gap: 24px; }
+
+      .hero-right { justify-content: center; }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section { padding: 72px 0; }
+
+      .about-right {
+        grid-template-columns: 1fr;
+      }
+
+      .about-card.highlight { grid-column: span 1; }
+
+      .hero-stats { flex-wrap: wrap; gap: 20px 32px; }
+    }
+
+   /* ============================================================
+       WHY US SECTION
+    ============================================================ */
+    #whyus {
+      background: var(--bg2);
+    }
+
+    .whyus-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .whyus-card {
+      background: var(--gradient-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: var(--transition);
+      cursor: default;
+    }
+
+    .whyus-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(108,99,255,0.35);
+      box-shadow: 0 1px 1px rgba(0,0,0,0.3), var(--glow-primary);
+    }
+
+    .whyus-card:active {
+      transform: translateY(-4px);
+      border-color: rgba(108,99,255,0.35);
+      box-shadow: 0 1px 1px rgba(0,0,0,0.3), var(--glow-primary);
+    }
+
+    .whyus-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: var(--radius);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .whyus-card:hover .whyus-icon {
+      transform: scale(1.1) rotate(-3deg);
+    }
+
+    .whyus-card h3 {
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .whyus-card p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 1024px) {
+      .whyus-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .whyus-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ============================================================
+       SCROLLBAR
+    ============================================================ */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb {
+      background: var(--surface2);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+   </style>
+   </head>
+
+   <body>
+
+   <!-- ============================================================
+       NAVBAR
+   ============================================================ -->
+   <nav id="navbar">
+     <div class="container">
+       <div class="nav-inner">
+         <!-- Logo -->
+           <a href="#home" class="nav-logo">
+             <img
+               src="assets/images/logo/logo.webp"
+                 alt="XDear Store"
+                   width="120"
+                 height="15"
+               decoding="async"
+             style="height:15px;width:auto;object-fit:contain;">
+          </a>
+
+        <!-- Desktop links -->
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#whyus">Why Us</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#carakerja">MC</a></li>
+          <li><a href="#review">Review</a></li>
+          <li class="nav-cta-wrap"><a href="#service" class="nav-cta">Get Started</a></li>
+        </ul>
+
+         <!-- Hamburger -->
+         <button class="hamburger" id="hamburger" aria-label="Menu">
+           <span></span><span></span><span></span>
+         </button>
+       </div>
+     </div>
+   </nav>
+
+   <!-- Mobile Menu -->
+   <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" style="order:1">Home</a>
+    <a href="#about" style="order:2">About</a>
+    <a href="#whyus" style="order:3">Why Us</a>
+    <a href="#service" style="order:4">Service</a>
+    <a href="#pricing" style="order:5">Pricing</a>
+    <a href="#carakerja" style="order:5">MC</a>
+    <a href="#review" style="order:6">Review</a>
+    <a href="#service" class="mobile-cta" style="order:6">Get Started →</a>
+   </div>
+
+
+   <!-- ============================================================
+       HERO SECTION
+   ============================================================ -->
+   <section id="home">
+    <!-- Background effects -->
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+       <div class="blob blob-2"></div>
+       <div class="blob blob-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <!-- Left: copy -->
+         <div class="hero-left">
+           <div class="hero-tag">
+             <span class="tag-dot"></span>
+            ALL TRX NO REFF
+          </div>
+
+          <h1 class="hero-headline">
+            Welcome To JB
+            <span class="gradient-text">xdear store</span>
+          </h1>
+
+        <h2 class="hero-typing">
+            <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
+          </h2>
+
+          <p class="hero-sub">
+            Membangun & menyediakan nilai digital melalui perdagangan akun terpercaya, layanan middleman yang aman, pengembangan website kustom, desain grafis kreatif, dan pemesanan produk digital, dengan fokus kuat pada kualitas, transparansi, keandalan, kecepatan, dan kepuasan pelanggan dalam setiap layanan yang diberikan.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#service" class="btn btn-primary btn-glass">
+              Explore Services
+               <span>→</span>
+                 </a>
+               <a href="#about" class="btn btn-ghost btn-glass">
+              Who I am
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+                <div class="stat-label">Transaksi</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+                <div class="stat-label">Custom Solutions</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+                <div class="stat-label">Layanan</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+                <div class="stat-label">Service Available</div>
+            </div>
+            <div class="stat-item">
+             <div class="stat-number">4.9</div>
+               <div class="stat-label">Average Rating</div>
+             </div>
+           </div>
+         </div>
+
+        <!-- Right: UI Mockup -->
+        <div class="hero-right">
+          <div class="hero-mockup">
+            <div class="hero-mockup-img">
+             <img
+               src="assets/images/mockup/mockup.webp"
+                 alt="Mockup"
+                 width="800"
+               height="800"
+             decoding="async"
+           style="width:110%;height:auto;border-radius:var(--radius-xl);display:block;">
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- ============================================================
+       MARQUEE SECTION
+   ============================================================ -->
+   <section id="marquee-section">
+     <div class="container">
+       <div class="marquee-label reveal">
+         <h3 class="marquee-title">Resmi menjadi OWN dari</h3>
+       </div>
+     </div>
+
+    <!-- Marquee Row 1 — kanan ke kiri -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track marquee-left">
+
+    <!-- Pills 1–5 original -->
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own1.webp"
+             alt="OWN 1"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own2.webp"
+             alt="OWN 2"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own3.webp"
+             alt="OWN 3"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own4.webp"
+             alt="OWN 4"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own5.webp"
+             alt="OWN 5"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <!-- Pills 1–5 duplikat untuk seamless loop -->
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own1.webp"
+             alt="OWN 1"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own2.webp"
+             alt="OWN 2"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own3.webp"
+             alt="OWN 3"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own4.webp"
+             alt="OWN 4"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own5.webp"
+             alt="OWN 5"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <!-- Pills 1–5 duplikat untuk seamless loop -->
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own1.webp"
+             alt="OWN 1"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own2.webp"
+             alt="OWN 2"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own3.webp"
+             alt="OWN 3"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own4.webp"
+             alt="OWN 4"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/own/own5.webp"
+             alt="OWN 5"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+      </div>
+    </div>
+
+    <div class="marquee-gap"></div>
+
+    <div class="container">
+      <div class="marquee-label reveal">
+        <h3 class="marquee-title">Resmi menjadi PT dari</h3>
+      </div>
+    </div>
+
+   <!-- Marquee Row 2 — kiri ke kanan -->
+     <div class="marquee-wrapper">
+       <div class="marquee-track marquee-right">
+
+        <!-- Pills 1–5 original -->
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt1.webp"
+             alt="PT 1"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt2.webp"
+             alt="PT 2"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt3.webp"
+             alt="PT 3"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt4.webp"
+             alt="PT 4"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt5.webp"
+             alt="PT 5"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <!-- Pills 1–5 duplikat untuk seamless loop -->
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt1.webp"
+             alt="PT 1"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt2.webp"
+             alt="PT 2"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt3.webp"
+             alt="PT 3"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt4.webp"
+             alt="PT 4"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt5.webp"
+             alt="PT 5"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <!-- Pills 1–5 duplikat untuk seamless loop -->
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt1.webp"
+             alt="PT 1"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt2.webp"
+             alt="PT 2"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt3.webp"
+             alt="PT 3"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt4.webp"
+             alt="PT 4"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+        <div class="marquee-pill">
+         <img
+           src="assets/images/pt/pt5.webp"
+             alt="PT 5"
+               class="pill-avatar"
+                 width="40"
+               height="40"
+             loading="lazy"
+           decoding="async">
+         <span class="pill-text">Dummy store</span>
+       </div>
+
+       </div>
+     </div>
+   </section>
+
+<!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about">
+    <div class="container">
+
+      <!-- Banner full width -->
+     <div class="about-banner-wrap reveal">
+       <div class="about-banner">
+         <video
+           class="about-banner-video"
+             autoplay
+               muted
+                 loop
+               playsinline
+             preload="auto">
+            <source src="assets/images/about/banner.webm" type="video/webm">
+          </video>
+        </div>
+        <div class="about-profil-wrap">
+          <img src="assets/images/about/profil.webp" alt="Profil xdear store" class="about-profil-img">
+        </div>
+      </div>
+
+      <!-- Grid: kiri text, kanan cards -->
+       <div class="about-grid">
+         <!-- Left: text -->
+           <div class="about-left reveal">
+           <div class="section-label">About Me</div>
+          <h2>XDEAR STORE<br><span class="gradient-text">- admin region jateng -</span></h2>
+           <br>
+          <p>
+            xdear menyediakan berbagai layanan digital dalam satu tempat, mulai dari jual beli akun, jasa rekber, pembuatan website, desain grafis, hingga produk digital dengan mengutamakan kualitas dan kepercayaan.
+           </p>
+          <p>
+            Setiap layanan dikerjakan secara profesional dengan proses yang jelas, komunikasi yang baik, serta komitmen untuk memberikan pengalaman terbaik bagi setiap pelanggan.
+           </p>
+
+   <div class="about-pills">
+     <span class="pill">
+       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;">
+           <rect x="3" y="11" width="18" height="11" rx="2"/>
+         <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+       </svg>
+     Transaksi Aman
+   </span>
+
+   <span class="pill">
+     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;">
+           <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+             <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
+             <path d="m21 3 1 11h-2"/>
+           <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
+         <path d="M3 4h8"/>
+       </svg>
+     Jasa Rekber
+   </span>
+
+   <span class="pill">
+     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF6B9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;">
+             <circle cx="12" cy="12" r="10"/>
+           <path d="M2 12h20"/>
+         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+       </svg>
+     Website Kustom
+   </span>
+
+   <span class="pill">
+     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;">
+                 <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/>
+               <circle cx="13.5" cy="6.5" r=".5" fill="#6C63FF"/>
+             <circle cx="17.5" cy="10.5" r=".5" fill="#6C63FF"/>
+           <circle cx="6.5" cy="12.5" r=".5" fill="#6C63FF"/>
+         <circle cx="8.5" cy="7.5" r=".5" fill="#6C63FF"/>
+       </svg>
+     Desain Kreatif
+   </span>
+
+   <span class="pill">
+     <svg xmlns="http://www.w3.org/2000/svg"
+       width="15"
+         height="15"
+           viewBox="0 0 24 24"
+             fill="none"
+               stroke="#00D4FF"
+                 stroke-width="2"
+                   stroke-linecap="round"
+                 stroke-linejoin="round"
+               style="vertical-align:middle;">
+             <path d="M10.5 3 8 9l4 13 4-13-2.5-6"/>
+           <path d="M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0L2.387 10.182A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z"/>
+         <path d="M2 9h20"/>
+       </svg>
+     Top up Game
+   </span>
+
+   <span class="pill">
+     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF6B9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;">
+                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+               </svg>
+             Respon Cepat
+           </span>
+         </div>
+        </div>
+
+        <!-- Right: cards -->
+         <div class="about-right reveal">
+           <div class="about-card">
+             <div class="about-card-icon">
+               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                 <circle cx="12" cy="12" r="10"/>
+                 <circle cx="12" cy="12" r="6"/>
+                 <circle cx="12" cy="12" r="2"/>
+               </svg>
+             </div>
+            <h4>Fokus Pada Kualitas</h4>
+            <p>Kami lebih mengutamakan hasil yang rapi, fungsional, dan sesuai kebutuhan daripada sekadar menyelesaikan pesanan.</p>
+           </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 7h6v6"/>
+                <path d="m22 7-8.5 8.5-5-5L2 17"/>
+              </svg>
+            </div>
+            <h4>Selalu Berinovasi</h4>
+            <p>Layanan terus dikembangkan mengikuti tren digital agar pelanggan mendapatkan solusi yang relevan.</p>
+           </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+                <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
+                <path d="m21 3 1 11h-2"/>
+                <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
+                <path d="M3 4h8"/>
+              </svg>
+            </div>
+            <h4>Membangun Kepercayaan</h4>
+            <p>Hubungan jangka panjang dengan pelanggan dibangun melalui pelayanan yang konsisten dan profesional.</p>
+           </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8B85FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                <path d="M2 12h20"/>
+              </svg>
+            </div>
+            <h4>Solusi Digital Modern</h4>
+            <p>Kami membantu individu maupun bisnis mendapatkan layanan digital yang praktis, cepat, dan mudah diakses.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- ============================================================
+       WHY US SECTION
+   ============================================================ -->
+   <section id="whyus">
+     <div class="container">
+       <div class="section-header reveal">
+         <div class="section-label">Kenapa Kami?</div>
+           <h2>Alasan memilih<br><span class="gradient-text">xdear store</span></h2>
+             <p>Bukan sekadar layanan biasa — kami hadir dengan komitmen nyata untuk setiap pelanggan.</p>
+         </div>
+
+      <div class="whyus-grid">
+        <div class="whyus-card reveal">
+          <div class="whyus-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Transaksi 100% Aman</h3>
+          <p>Setiap transaksi dilindungi sistem rekber dan verifikasi berlapis agar pembeli dan penjual sama-sama terlindungi.</p>
+         </div>
+
+        <div class="whyus-card reveal">
+          <div class="whyus-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3>Respon Cepat 24/7</h3>
+          <p>Tim kami siap membantu kapan saja. Tidak ada pertanyaan yang dibiarkan tanpa jawaban lebih dari 1 jam.</p>
+         </div>
+
+        <div class="whyus-card reveal">
+          <div class="whyus-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8B85FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+            </svg>
+          </div>
+          <h3>Kualitas Terjamin</h3>
+          <p>Setiap produk dan layanan telah melalui pengecekan kualitas sebelum diberikan kepada pelanggan.</p>
+         </div>
+
+        <div class="whyus-card reveal">
+          <div class="whyus-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF6B9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/>
+              <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/>
+            </svg>
+          </div>
+          <h3>Harga Terjangkau</h3>
+          <p>Layanan premium tidak harus mahal. Kami menawarkan harga yang kompetitif tanpa mengorbankan kualitas.</p>
+         </div>
+
+        <div class="whyus-card reveal">
+          <div class="whyus-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m17 2 4 4-4 4"/>
+              <path d="M3 11v-1a4 4 0 0 1 4-4h14"/>
+              <path d="m7 22-4-4 4-4"/>
+              <path d="M21 13v1a4 4 0 0 1-4 4H3"/>
+            </svg>
+          </div>
+          <h3>Pelanggan Setia Kembali</h3>
+          <p>Lebih dari 80% pelanggan kami kembali untuk order berikutnya — kepercayaan adalah bukti terbaik kami.</p>
+         </div>
+
+        <div class="whyus-card reveal">
+          <div class="whyus-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>
+              <path d="M7 11h10"/>
+              <path d="M7 15h6"/>
+              <path d="M7 7h8"/>
+            </svg>
+          </div>
+          <h3>Komunikasi Transparan</h3>
+          <p>Tidak ada biaya tersembunyi, tidak ada janji kosong. Semua proses dijelaskan dengan jelas dari awal hingga selesai.</p>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- ============================================================
+       SERVICE SECTION
+   ============================================================ -->
+   <section id="service">
+     <div class="section-header reveal">
+        <div class="section-label">What We Do</div>
+         <h2> Bangun danLayanan untuk<br><span class="gradient-text">hasil yang nyata</span></h2>
+        <p>Setiap layanan ditangani dengan profesionalisme dan perhatian terhadap detail. Kami mengutamakan keamanan, transparansi, dan kepuasan pelanggan dalam setiap transaksi.</p>
+       </div>
+     <div class="service-slider-wrapper">
+        <div class="service-slider" id="serviceSlider">
+
+       <!-- Card 1 -->
+         <div class="service-slide reveal">
+           <div class="service-slide-card" style="--mesh-color: #6C63FF;">
+             <div class="slide-mesh"></div>
+               <div class="slide-icon-area">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad2-icon lucide-gamepad-2"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg>
+                 </div>
+               <div class="slide-body">
+             <h3>Jual Beli Akun</h3>
+           <p>Temukan berbagai akun digital berkualitas dengan proses transaksi yang aman, transparan, dan terpercaya.</p>
+          </div>
+       </div>
+     </div>
+
+       <!-- Card 2 -->
+         <div class="service-slide reveal">
+           <div class="service-slide-card" style="--mesh-color: #00D4FF;">
+             <div class="slide-mesh"></div>
+               <div class="slide-icon-area">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake-icon lucide-handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 0 0 3-3"/><path d="M3 4h8"/></svg>
+                 </div>
+               <div class="slide-body">
+             <h3>Jasa Rekber</h3>
+           <p>Lindungi setiap transaksi dengan layanan rekening bersama yang membantu penjual dan pembeli bertransaksi dengan lebih aman.</p>
+          </div>
+       </div>
+     </div>
+
+       <!-- Card 3 -->
+         <div class="service-slide reveal">
+           <div class="service-slide-card" style="--mesh-color: #FF6B9D;">
+             <div class="slide-mesh"></div>
+               <div class="slide-icon-area">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                 </div>
+               <div class="slide-body">
+             <h3>Pembuatan Website</h3>
+           <p>Website landing page, portofolio, dan link in bio yang modern, responsif, dan sesuai kebutuhan bisnis maupun personal.</p>
+         </div>
+       </div>
+     </div>
+
+       <!-- Card 4 -->
+         <div class="service-slide reveal">
+           <div class="service-slide-card" style="--mesh-color: #8B85FF;">
+             <div class="slide-mesh"></div>
+               <div class="slide-icon-area">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette-icon lucide-palette"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/></svg>
+                 </div>
+               <div class="slide-body">
+             <h3>Desain Grafis</h3>
+           <p>Desain logo, banner, poster, thumbnail, dan berbagai kebutuhan visual untuk membangun identitas digital yang profesional.</p>
+         </div>
+       </div>
+     </div>
+
+       <!-- Card 5 -->
+         <div class="service-slide reveal">
+           <div class="service-slide-card" style="--mesh-color: #38BDF8;">
+             <div class="slide-mesh"></div>
+               <div class="slide-icon-area">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/></svg>
+                 </div>
+               <div class="slide-body">
+             <h3>Produk Digital</h3>
+           <p>Berbagai produk digital pilihan yang praktis dan siap digunakan untuk mendukung kebutuhan maupun produktivitas Anda.</p>
+         </div>
+       </div>
+     </div>
+
+       <!-- Card 6 -->
+         <div class="service-slide reveal">
+           <div class="service-slide-card" style="--mesh-color: #EC4899;">
+             <div class="slide-mesh"></div>
+               <div class="slide-icon-area">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-text-icon lucide-message-square-text"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/><path d="M7 11h10"/><path d="M7 15h6"/><path d="M7 7h8"/></svg>
+                  </div>
+               <div class="slide-body">
+             <h3>Layanan Pelanggan</h3>
+           <p>Dukungan yang responsif, komunikasi yang jelas, dan pendampingan selama proses transaksi maupun pengerjaan layanan.</p>
+         </div>
+       </div>
+     </div>
+
+          </div>
+       </div>
+      </div>
+   </section>
+
+   <!-- ============================================================
+       PRICING SECTION
+   ============================================================ -->
+   <section id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Pricing</div>
+         <h2>Pilih Paket yang<br><span class="gradient-text">Sesuai Kebutuhan</span></h2>
+        <p>Tersedia berbagai pilihan paket layanan yang dapat disesuaikan dengan kebutuhan dan anggaran Anda.</p>
+      </div>
+    </div>
+
+    <div class="pricing-slider-wrapper">
+      <div class="pricing-track" id="pricingTrack">
+
+       <!-- Card 1 — Basic -->
+         <div class="pricing-slide reveal">
+           <div class="pricing-card">
+             <div class="pricing-label pricing-label-basic">Basic</div>
+               <div class="pricing-price">
+                 <span class="price-currency">Rp</span>
+               <span class="price-amount">100.000</span>
+             </div>
+            <p class="pricing-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <ul class="pricing-features">
+              <li><span class="pricing-check pricing-check-basic"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-basic"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+            </ul>
+            <a href="https://wa.me/6282324872212?text=Halo%20bang%20xdear%2C%20saya%20mau%20order%20paket%20Basic" target="_blank" class="pricing-btn pricing-btn-basic">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Card 2 — Standard -->
+         <div class="pricing-slide reveal">
+           <div class="pricing-card">
+             <div class="pricing-label pricing-label-standard">Standard</div>
+               <div class="pricing-price">
+                 <span class="price-currency">Rp</span>
+               <span class="price-amount">100.000</span>
+             </div>
+            <p class="pricing-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <ul class="pricing-features">
+              <li><span class="pricing-check pricing-check-standard"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-standard"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-standard"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+            </ul>
+            <a href="https://wa.me/6282324872212?text=Halo%20bang%20xdear%2C%20saya%20mau%20order%20paket%20Standard" target="_blank" class="pricing-btn pricing-btn-standard">Buy Now</a>
+          </div>
+        </div>
+
+       <!-- Card 3 — Premium -->
+         <div class="pricing-slide reveal">
+           <div class="pricing-card">
+             <div class="pricing-label pricing-label-premium">Premium</div>
+               <div class="pricing-price">
+                 <span class="price-currency">Rp</span>
+               <span class="price-amount">100.000</span>
+             </div>
+            <p class="pricing-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <ul class="pricing-features">
+              <li><span class="pricing-check pricing-check-premium"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-premium"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-premium"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-premium"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+            </ul>
+            <a href="https://wa.me/6282324872212?text=Halo%20bang%20xdear%2C%20saya%20mau%20order%20paket%20Premium" target="_blank" class="pricing-btn pricing-btn-premium">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Card 4 — Special -->
+         <div class="pricing-slide reveal">
+           <div class="pricing-card">
+             <div class="pricing-label pricing-label-special">Special</div>
+               <div class="pricing-price">
+                 <span class="price-currency">Rp</span>
+               <span class="price-amount">100.000</span>
+             </div>
+            <p class="pricing-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <ul class="pricing-features">
+              <li><span class="pricing-check pricing-check-special"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-special"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-special"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-special"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+            </ul>
+            <a href="https://wa.me/6282324872212?text=Halo%20bang%20xdear%2C%20saya%20mau%20order%20paket%20Special" target="_blank" class="pricing-btn pricing-btn-special">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Card 5 — Max -->
+         <div class="pricing-slide reveal">
+           <div class="pricing-card">
+             <div class="pricing-label pricing-label-max">Max</div>
+               <div class="pricing-price">
+                 <span class="price-currency">Rp</span>
+               <span class="price-amount">100.000</span>
+             </div>
+            <p class="pricing-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <ul class="pricing-features">
+              <li><span class="pricing-check pricing-check-max"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-max"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-max"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-max"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+              <li><span class="pricing-check pricing-check-max"><i data-lucide="check" style="width:12px;height:12px;color:white;"></i></span>Lorem ipsum dolor sit amet consectetuer</li>
+            </ul>
+            <a href="https://wa.me/6282324872212?text=Halo%20bang%20xdear%2C%20saya%20mau%20order%20paket%20Max" target="_blank" class="pricing-btn pricing-btn-max">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Nav -->
+    <div class="pricing-nav-wrapper">
+      <button class="pricing-nav-btn" id="pricingPrev"><i data-lucide="chevron-left" style="width:20px;height:20px;"></i></button>
+    <div class="pricing-dots" id="pricingDots"></div>
+    <button class="pricing-nav-btn" id="pricingNext"><i data-lucide="chevron-right" style="width:20px;height:20px;"></i></button>
+    </div>
+
+  </section>
+
+   <!-- ============================================================
+       CARA KERJA MC SECTION — HORIZONTAL STEPPER
+   ============================================================ -->
+   <section id="carakerja">
+     <div class="container">
+       <div class="section-header reveal">
+         <div class="section-label">How To Work</div>
+           <h2>Bagaimana tata<br><span class="gradient-text">cara rekber?</span></h2>
+             <p>Setiap transaksi diproses melalui alur yang jelas, aman, dan transparan. Mulai dari kesepakatan antara penjual dan pembeli hingga dana diteruskan setelah produk berhasil diterima, seluruh proses diawasi oleh admin MC untuk memberikan pengalaman transaksi yang nyaman dan terpercaya.</p>
+      </div>
+
+      <!-- Stepper indicator -->
+       <div class="ck-stepper" id="ckStepper">
+         <div class="ck-stepper-item active" data-step="1">1</div>
+         <div class="ck-stepper-line"></div>
+         <div class="ck-stepper-item" data-step="2">2</div>
+         <div class="ck-stepper-line"></div>
+         <div class="ck-stepper-item" data-step="3">3</div>
+         <div class="ck-stepper-line"></div>
+         <div class="ck-stepper-item" data-step="4">4</div>
+         <div class="ck-stepper-line"></div>
+         <div class="ck-stepper-item" data-step="5">5</div>
+         <div class="ck-stepper-line"></div>
+         <div class="ck-stepper-item" data-step="6">6</div>
+       </div>
+
+      <!-- Glass card slider -->
+       <div class="ck-glass-wrapper">
+         <div class="ck-glass-card">
+           <img src="assets/images/carakerja/step1.jpeg" alt="Step 1" class="ck-glass-img" id="ckGlassImg">
+        </div>
+      </div>
+
+      <!-- Info text -->
+       <div class="ck-info-text">
+         <h3 class="ck-info-title" id="ckInfoTitle">Kesepakatan Transaksi</h3>
+           <p class="ck-info-desc" id="ckInfoDesc">Penjual, pembeli, dan MC menyepakati harga, biaya layanan, serta syarat dan ketentuan yang berlaku sebelum transaksi dimulai.</p>
+      </div>
+
+      <!-- Nav buttons -->
+       <div class="ck-nav-wrapper">
+         <button class="ck-nav-btn" id="ckPrev"><i data-lucide="chevron-left" style="width:20px;height:20px;"></i></button>
+        <button class="ck-nav-btn" id="ckNext"><i data-lucide="chevron-right" style="width:20px;height:20px;"></i></button>
+      </div>
+
+   <!-- Fee Admin Table -->
+      <div class="fee-glass-wrapper">
+        <div class="fee-glass-card fee-fade">
+
+          <div class="fee-header">
+            <h4 class="fee-title fee-stagger"><i data-lucide="shield-check" style="width:18px;height:18px;color:var(--primary-light);vertical-align:middle;"></i> List Fee Admin MC <i data-lucide="shield-check" style="width:18px;height:18px;color:var(--primary-light);vertical-align:middle;"></i></h4>
+            <p class="fee-subtitle fee-stagger">Fast Respon • Aman • Ganteng</p>
+          </div>
+
+          <div class="fee-table">
+            <div class="fee-row fee-row-header fee-stagger">
+              <span>Nominal Transaksi</span>
+               <span>Fee Admin</span>
+            </div>
+            <div class="fee-row fee-stagger">
+              <span>Rp0 – Rp50.000</span>
+               <span>Rp3.000</span>
+            </div>
+            <div class="fee-row fee-stagger">
+              <span>Rp51.000 – Rp100.000</span>
+               <span>Rp5.000</span>
+            </div>
+            <div class="fee-row fee-stagger">
+              <span>Rp101.000 – Rp200.000</span>
+               <span>Rp8.000</span>
+            </div>
+            <div class="fee-row fee-stagger">
+              <span>Rp201.000 – Rp300.000</span>
+               <span>Rp10.000</span>
+            </div>
+            <div class="fee-row fee-stagger">
+              <span>Rp301.000 – Rp400.000</span>
+               <span>Rp15.000</span>
+            </div>
+            <div class="fee-row fee-stagger">
+              <span>Rp401.000 – Rp500.000</span>
+               <span>Rp20.000</span>
+            </div>
+            <div class="fee-row fee-stagger">
+              <span>MC TT / BT</span>
+               <span>Rp25.000</span>
+             </div>
+           </div>
+
+         <div class="fee-footer">
+            <p class="fee-stagger" style="color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;text-align:center;">
+              <i data-lucide="triangle-alert" style="width:14px;height:14px;color:#FB923C;flex-shrink:0;"></i>
+              JAPOST DI XDEAR HARUS MC DI XDEAR
+              <i data-lucide="triangle-alert" style="width:14px;height:14px;color:#FB923C;flex-shrink:0;"></i>
+           </p>
+             <div style="height:1px;"></div>
+               <p class="fee-stagger" style="color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;text-align:center;">
+              SAYANGI UANG KALIAN. KARNA NOMINAL BOLEH KECIL TAPI OTAK JANGAN
+           </p>
+          </div>
+
+        </div>
+      </div>
+
+       </div>
+     </section>
+
+   <!-- ============================================================
+       REVIEW SECTION
+    ============================================================ -->
+   <section id="review">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Buyer Reviews</div>
+         <h2>Dipercaya oleh para<br><span class="gradient-text">Seller & Buyer sejati</span></h2>
+        <p>Kepercayaan adalah fondasi utama dalam bisnis. Berikut pengalaman pelanggan yang telah menggunakan layanan kami dan merasakan kualitas pelayanan yang kami berikan.</p>
+      </div>
+    </div>
+
+    <div class="review-track-wrapper">
+      <div class="review-track">
+
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Landing page yang dibuat terlihat premium dan profesional. Dalam beberapa hari setelah dipublikasikan, jumlah pelanggan yang menghubungi bisnis saya meningkat."</p>
+          <div class="review-author">
+            <div class="author-avatar av-purple">AK</div>
+             <div class="author-info">
+               <div class="author-name">Aisha K.</div>
+              <div class="author-role">Founder, Lumivex Co.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+         <div class="review-card">
+           <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Website landing page saya selesai tepat waktu dengan hasil yang sangat memuaskan. Proses revisinya cepat dan komunikasi selama pengerjaan sangat jelas."</p>
+          <div class="review-author">
+            <div class="author-avatar av-cyan">J</div>
+             <div class="author-info">
+               <div class="author-name">Jokowi</div>
+              <div class="author-role">CEO PT Anjay Mabar</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+         <div class="review-card">
+           <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Link in Bio yang dibuat jauh lebih menarik dan mudah digunakan. Semua informasi penting tersusun rapi sehingga pelanggan lebih mudah menemukan yang mereka butuhkan."</p>
+          <div class="review-author">
+            <div class="author-avatar av-pink">SL</div>
+             <div class="author-info">
+               <div class="author-name">Sara L.</div>
+              <div class="author-role">Product Lead, Driftly</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+         <div class="review-card">
+           <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Website company profile yang mereka bangun sangat cepat, responsif di semua perangkat, dan sesuai dengan kebutuhan bisnis saya. Hasilnya benar-benar profesional."</p>
+          <div class="review-author">
+            <div class="author-avatar av-violet">MJ</div>
+             <div class="author-info">
+              <div class="author-name">Marco J.</div>
+              <div class="author-role">Creator & Indie Maker</div>
+            </div>
+           </div>
+         </div>
+
+        <!-- Review 5 -->
+         <div class="review-card">
+           <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Desain logo dan materi branding yang dibuat sangat sesuai dengan identitas bisnis saya. Warna, tipografi, dan keseluruhan desain terasa modern dan berkelas."</p>
+          <div class="review-author">
+            <div class="author-avatar av-deep-cyan">ZP</div>
+             <div class="author-info">
+               <div class="author-name">Zara P.</div>
+              <div class="author-role">Founder, Kova Studio</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+         <div class="review-card">
+           <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Proses pemesanan produk digital sangat mudah, pengiriman cepat, dan semuanya sesuai deskripsi. Pelayanannya ramah dan sangat bisa dipercaya."</p>
+          <div class="review-author">
+            <div class="author-avatar av-soft-pink">DN</div>
+             <div class="author-info">
+               <div class="author-name">David N.</div>
+              <div class="author-role">Co-founder, Prismly</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplikat untuk seamless loop -->
+         <!-- Review 1 duplikat -->
+           <div class="review-card">
+             <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Landing page yang dibuat terlihat premium dan profesional. Dalam beberapa hari setelah dipublikasikan, jumlah pelanggan yang menghubungi bisnis saya meningkat."</p>
+          <div class="review-author">
+            <div class="author-avatar av-purple">AK</div>
+             <div class="author-info">
+               <div class="author-name">Aisha K.</div>
+              <div class="author-role">Founder, Lumivex Co.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 duplikat -->
+         <div class="review-card">
+           <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Website landing page saya selesai tepat waktu dengan hasil yang sangat memuaskan. Proses revisinya cepat dan komunikasi selama pengerjaan sangat jelas."</p>
+          <div class="review-author">
+            <div class="author-avatar av-cyan">J</div>
+             <div class="author-info">
+               <div class="author-name">Jokowi</div>
+              <div class="author-role">CEO PT Anjay Mabar</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 duplikat -->
+         <div class="review-card">
+           <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Link in Bio yang dibuat jauh lebih menarik dan mudah digunakan. Semua informasi penting tersusun rapi sehingga pelanggan lebih mudah menemukan yang mereka butuhkan."</p>
+          <div class="review-author">
+            <div class="author-avatar av-pink">SL</div>
+             <div class="author-info">
+               <div class="author-name">Sara L.</div>
+              <div class="author-role">Product Lead, Driftly</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 duplikat -->
+         <div class="review-card">
+           <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Website company profile yang mereka bangun sangat cepat, responsif di semua perangkat, dan sesuai dengan kebutuhan bisnis saya. Hasilnya benar-benar profesional."</p>
+          <div class="review-author">
+            <div class="author-avatar av-green">MJ</div>
+             <div class="author-info">
+               <div class="author-name">Marco J.</div>
+              <div class="author-role">Creator & Indie Maker</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5 duplikat -->
+         <div class="review-card">
+           <div class="review-stars">
+             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Desain logo dan materi branding yang dibuat sangat sesuai dengan identitas bisnis saya. Warna, tipografi, dan keseluruhan desain terasa modern dan berkelas."</p>
+          <div class="review-author">
+            <div class="author-avatar av-orange">ZP</div>
+             <div class="author-info">
+               <div class="author-name">Zara P.</div>
+              <div class="author-role">Founder, Kova Studio</div>
+            </div>
+          </div>
+        </div>
+
+<!-- Review 6 duplikat -->
+        <div class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="review-text">"Proses pemesanan produk digital sangat mudah, pengiriman cepat, dan semuanya sesuai deskripsi. Pelayanannya ramah dan sangat bisa dipercaya."</p>
+          <div class="review-author">
+            <div class="author-avatar av-indigo">DN</div>
+             <div class="author-info">
+               <div class="author-name">David N.</div>
+              <div class="author-role">Co-founder, Prismly</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- ============================================================
+       EXPAND CARDS SECTION
+  ============================================================ -->
+  <section id="expand">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Gallery</div>
+        <h2>Momen &<br><span class="gradient-text">Transaksi Kami</span></h2>
+        <p>Kumpulan momen screenshot transaksi dan layanan yang telah kami berikan kepada buyer setia xdear store.</p>
+      </div>
+    </div>
+    <div class="expand-cards-wrapper reveal">
+      <div class="expand-cards" id="expandCards">
+        <div class="expand-card active">
+          <img src="assets/images/expandcard/card1.webp" alt="Card 1">
+        </div>
+        <div class="expand-card">
+          <img src="assets/images/expandcard/card2.webp" alt="Card 2">
+        </div>
+        <div class="expand-card">
+          <img src="assets/images/expandcard/card3.webp" alt="Card 3">
+        </div>
+        <div class="expand-card">
+          <img src="assets/images/expandcard/card4.webp" alt="Card 4">
+        </div>
+        <div class="expand-card">
+          <img src="assets/images/expandcard/card5.webp" alt="Card 5">
+        </div>
+        <div class="expand-card">
+          <img src="assets/images/expandcard/card6.webp" alt="Card 6">
+        </div>
+        <div class="expand-card">
+          <img src="assets/images/expandcard/card7.webp" alt="Card 7">
+        </div>
+        <div class="expand-card">
+          <img src="assets/images/expandcard/card8.webp" alt="Card 8">
+        </div>
+        <div class="expand-card">
+          <img src="assets/images/expandcard/card9.webp" alt="Card 9">
+        </div>
+        <div class="expand-card">
+          <img src="assets/images/expandcard/card10.webp" alt="Card 10">
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ============================================================
+       FAQ SECTION
+  ============================================================ -->
+   <section id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">FAQ</div>
+          <h2>Pertanyaan yang<br><span class="gradient-text">sering ditanyakan</span></h2>
+        <p>Temukan jawaban atas pertanyaan umum mengenai layanan dan proses transaksi</p>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Apakah transaksi dijamin aman?</span>
+             <i data-lucide="chevron-down" class="faq-icon" style="width:20px;height:20px;flex-shrink:0;transition:transform 0.3s ease;"></i>
+           </button>
+          <div class="faq-answer">
+            <p>Ya. Kami mengutamakan keamanan dalam setiap transaksi dengan proses yang transparan dan verifikasi yang jelas. Kepuasan serta kepercayaan pelanggan adalah prioritas utama kami.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Berapa lama proses pengerjaan?</span>
+             <i data-lucide="chevron-down" class="faq-icon" style="width:20px;height:20px;flex-shrink:0;transition:transform 0.3s ease;"></i>
+          </button>
+           <div class="faq-answer">
+             <p>Waktu pengerjaan bergantung pada jenis layanan yang dipilih. Sebagian besar pesanan diproses secepat mungkin setelah pembayaran berhasil dikonfirmasi.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Metode pembayaran apa saja yang tersedia?</span>
+             <i data-lucide="chevron-down" class="faq-icon" style="width:20px;height:20px;flex-shrink:0;transition:transform 0.3s ease;"></i>
+           </button>
+          <div class="faq-answer">
+            <p>Kami menerima berbagai metode pembayaran yang umum digunakan, seperti transfer bank, QRIS, dan e-wallet. Informasi lengkap akan diberikan saat proses pemesanan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Apakah ada garansi untuk layanan?</span>
+             <i data-lucide="chevron-down" class="faq-icon" style="width:20px;height:20px;flex-shrink:0;transition:transform 0.3s ease;"></i>
+           </button>
+          <div class="faq-answer">
+            <p>Ya. Beberapa layanan kami dilengkapi dengan garansi sesuai ketentuan yang berlaku. Detail garansi akan dijelaskan sebelum transaksi dilakukan agar tidak terjadi kesalahpahaman.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Bagaimana cara melakukan pemesanan?</span>
+             <i data-lucide="chevron-down" class="faq-icon" style="width:20px;height:20px;flex-shrink:0;transition:transform 0.3s ease;"></i>
+           </button>
+          <div class="faq-answer">
+            <p>Pilih layanan yang dibutuhkan, hubungi admin melalui WhatsApp atau media sosial yang tersedia, jelaskan kebutuhan Anda, lakukan pembayaran, lalu kami akan segera memproses pesanan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Bagaimana jika saya mengalami kendala setelah transaksi?</span>
+             <i data-lucide="chevron-down" class="faq-icon" style="width:20px;height:20px;flex-shrink:0;transition:transform 0.3s ease;"></i>
+           </button>
+          <div class="faq-answer">
+            <p>Silakan hubungi tim support melalui kontak yang tersedia di website. Kami akan membantu menangani setiap kendala sesuai dengan jenis layanan yang Anda gunakan.</p>
+          </div>
+        </div>
+
+       </div>
+     </div>
+   </section>
+
+   <!-- ============================================================
+       CTA SECTION
+   ============================================================ -->
+   <section id="cta">
+     <div class="container">
+       <div class="cta-wrapper reveal">
+
+        <div class="cta-header">
+          <div class="section-label">Hubungi Kami</div>
+           <h2>Siap Memulai<br><span class="gradient-text">Transaksi?</span></h2>
+             <p class="cta-desc">Butuh layanan yang cepat, aman, dan terpercaya? Admin siap membantu kebutuhan Anda, mulai dari konsultasi hingga proses transaksi selesai. Hubungi kami sekarang dan dapatkan layanan terbaik sesuai kebutuhan Anda.</p>
+        </div>
+
+        <div class="cta-contacts">
+          <a href="https://wa.me/6282324872212" target="_blank" class="cta-contact-card">
+            <div class="cta-contact-icon">
+              <img src="https://cdn.simpleicons.org/whatsapp/25D366" width="22" height="22">
+            </div>
+            <div class="cta-contact-info">
+              <span class="cta-contact-label">Nomor Utama</span>
+              <span class="cta-contact-number">+62 823-2487-2212</span>
+            </div>
+            <i data-lucide="arrow-right" style="width:18px;height:18px;color:var(--text-muted);margin-left:auto;flex-shrink:0;"></i>
+          </a>
+
+          <div class="cta-contact-card disabled">
+            <div class="cta-contact-icon">
+              <img src="https://cdn.simpleicons.org/whatsapp/8888AA" width="22" height="22">
+            </div>
+            <div class="cta-contact-info">
+              <span class="cta-contact-label">Nomor Kedua</span>
+              <span class="cta-contact-number" style="color:var(--text-muted);">Belum tersedia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-warning">
+          <div class="cta-warning-item">
+            <i data-lucide="triangle-alert" style="width:16px;height:16px;color:#FB923C;flex-shrink:0;"></i>
+            <p>NOMOR ADMIN HANYA KEDUA ITU, SELAIN ITU CLONE</p>
+            <i data-lucide="triangle-alert" style="width:16px;height:16px;color:#FB923C;flex-shrink:0;"></i>
+          </div>
+          <div class="cta-warning-item">
+            <i data-lucide="sparkles" style="width:16px;height:16px;color:var(--primary-light);flex-shrink:0;"></i>
+            <p>BE SMART BUYER AND SELLER</p>
+            <i data-lucide="sparkles" style="width:16px;height:16px;color:var(--primary-light);flex-shrink:0;"></i>
+          </div>
+        </div>
+
+       </div>
+     </div>
+   </section>
+
+   <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+   <footer>
+     <div class="container">
+       <div class="footer-top">
+         <!-- Brand column -->
+         <div class="footer-brand">
+           <a href="#home" class="nav-logo">
+         <img
+           src="assets/images/logo/logo.webp"
+           alt="XDear Store"
+           width="150"
+           height="25"
+           decoding="async"
+           style="height:25px;width:auto;object-fit:contain;">
+          </a>
+          <p>Satu Tempat, Banyak Manfaat.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Discord">
+              <img src="https://cdn.simpleicons.org/discord/8888AA" width="18" height="18">
+            </a>
+            <a href="#" class="social-btn" aria-label="Telegram">
+              <img src="https://cdn.simpleicons.org/telegram/8888AA" width="18" height="18">
+            </a>
+            <a href="#" class="social-btn" aria-label="WhatsApp">
+              <img src="https://cdn.simpleicons.org/whatsapp/8888AA" width="18" height="18">
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <img src="https://cdn.simpleicons.org/instagram/8888AA" width="18" height="18">
+            </a>
+            <a href="#" class="social-btn" aria-label="TikTok">
+              <img src="https://cdn.simpleicons.org/tiktok/8888AA" width="18" height="18">
+            </a>
+            <a href="#" class="social-btn" aria-label="GitHub">
+              <img src="https://cdn.simpleicons.org/github/8888AA" width="18" height="18">
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#review">Reviews</a></li>
+          </ul>
+        </div>
+
+   <!-- Payment Methods -->
+   <div class="footer-col">
+     <h5>Metode Pembayaran</h5>
+       <div class="footer-payment">
+     <img
+       src="assets/images/payment/qris.webp"
+         alt="QRIS"
+           class="payment-logo"
+             width="56"
+           height="32"
+         loading="lazy"
+       decoding="async">
+
+     <img
+       src="assets/images/payment/dana.webp"
+         alt="DANA"
+           class="payment-logo"
+            width="56"
+           height="32"
+         loading="lazy"
+       decoding="async">
+
+     <img
+       src="assets/images/payment/gopay.webp"
+         alt="GoPay"
+           class="payment-logo"
+             width="56"
+           height="32"
+         loading="lazy"
+       decoding="async">
+
+     <img
+       src="assets/images/payment/seabank.webp"
+         alt="SeaBank"
+           class="payment-logo"
+             width="56"
+           height="32"
+         loading="lazy"
+       decoding="async">
+     </div>
+   </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="#">dearnetworking@gmail.com</a></li>
+              <li><a href="#">Book a Call</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 xdear store. All rights reserved. | <a href="https://wa.me/6282324872212?text=bang%20xdear%20mau%20order%20website%20bang" target="_blank" style="color:#FFFFFF;font-weight:600;text-decoration:none;">Designed & Developed by xdear store</a></p>
+         <div class="footer-badges"></div>
+       </div>
+     </div>
+    </footer>
+
+<!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightboxOverlay">
+    <div class="lightbox-box">
+      <button class="lightbox-close" id="lightboxClose">
+        <i data-lucide="x" style="width:18px;height:18px;color:#000;"></i>
+      </button>
+      <img src="" alt="Preview" class="lightbox-img" id="lightboxImg">
+    </div>
+  </div>
+
+   <!-- ============================================================
+       JAVASCRIPT
+   ============================================================ -->
+    <script>
+    // ────────────────────────────────────────────────
+    // NAVBAR: scroll effect + active link highlight
+    // ────────────────────────────────────────────────
+    const navbar   = document.getElementById('navbar');
+    const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
+    const sections = document.querySelectorAll('section[id]');
+
+   function onScroll() {
+     if (window.scrollY > 20) {
+       navbar.classList.add('scrolled');
+       } else {
+     navbar.classList.remove('scrolled');
+   }
+
+      // Active link based on scroll position
+       let current = '';
+         sections.forEach(section => {
+         const top = section.offsetTop - 120;
+        if (window.scrollY >= top) current = section.getAttribute('id');
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+         if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // run once on load
+
+   lucide.createIcons();
+
+    // ────────────────────────────────────────────────
+    // HAMBURGER MENU
+    // ────────────────────────────────────────────────
+   const hamburger  = document.getElementById('hamburger');
+   const mobileMenu = document.getElementById('mobileMenu');
+   const menuLinks  = mobileMenu.querySelectorAll('a');
+
+   function openMenu() {
+     hamburger.classList.add('open');
+       mobileMenu.classList.add('open');
+   // Masuk dari atas ke bawah: Review(0) → Service(1) → About(2) → Home(3) → CTA(4)
+         menuLinks.forEach((link, i) => {
+       link.style.transitionDelay = `${i * 70}ms`;
+     });
+   }
+
+   function closeMenu() {
+   // Keluar ke atas: Home(3) → About(2) → Service(1) → Review(0)
+   // Urutan reverse dari urutan HTML, jadi delay dibalik
+   const total = menuLinks.length;
+   menuLinks.forEach((link, i) => {
+    link.style.transitionDelay = `${(total - 1 - i) * 70}ms`;
+   });
+
+   hamburger.classList.remove('open');
+   mobileMenu.classList.remove('open');
+   }
+
+   hamburger.addEventListener('click', () => {
+     if (hamburger.classList.contains('open')) {
+       closeMenu();
+       } else {
+       openMenu();
+     }
+   });
+
+   menuLinks.forEach(link => {
+   link.addEventListener('click', () => closeMenu());
+   });
+
+   document.addEventListener('click', e => {
+     if (!navbar.contains(e.target) && !mobileMenu.contains(e.target)) {
+       closeMenu();
+     }
+   });
+
+  // ────────────────────────────────────────────────
+    // FAQ ACCORDION
+    // ────────────────────────────────────────────────
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+         const isOpen = item.classList.contains('open');
+
+   // Tutup semua
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+
+        // Buka yang diklik kalau sebelumnya tertutup
+         if (!isOpen) {
+           setTimeout(() => {
+            item.classList.add('open');
+          }, 80);
+        }
+
+        lucide.createIcons();
+      });
+    });
+
+   // ────────────────────────────────────────────────
+    // FAQ — tutup saat klik di luar
+    // ────────────────────────────────────────────────
+    document.addEventListener('click', (e) => {
+      const isInsideFaq = e.target.closest('.faq-item');
+       if (!isInsideFaq) {
+         document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      }
+    });
+
+    // ────────────────────────────────────────────────
+    // SCROLL REVEAL
+    // ────────────────────────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal');
+
+   const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const delay = Array.from(revealEls).indexOf(entry.target) % 6 * 80;
+           setTimeout(() => {
+             entry.target.classList.add('visible');
+           }, delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.05,
+      rootMargin: '0px 0px 0px 0px'
+    });
+
+    revealEls.forEach(el => observer.observe(el));
+    
+    // ────────────────────────────────────────────────
+   // CARD TAP EFFECT — mobile
+   // ────────────────────────────────────────────────
+   document.querySelectorAll('.about-card, .service-card, .review-card').forEach(card => {
+   card.addEventListener('click', () => {
+    // Hapus active dari semua card sejenis
+    const siblings = document.querySelectorAll(
+      card.classList.contains('about-card') ? '.about-card' :
+      card.classList.contains('service-card') ? '.service-card' : '.review-card'
+    );
+     siblings.forEach(c => c.classList.remove('tapped'));
+
+     // Toggle tapped di card yang diklik
+     card.classList.toggle('tapped');
+     });
+   });
+
+   // ────────────────────────────────────────────────
+    // CARA KERJA MC — HORIZONTAL STEPPER
+    // ────────────────────────────────────────────────
+   const ckData = [
+   {
+      title: 'Kesepakatan Transaksi',
+       desc: 'Penjual, pembeli, dan MC menyepakati harga, biaya layanan, serta syarat dan ketentuan yang berlaku sebelum rekber dimulai.',
+       img: 'assets/images/carakerja/step1.webp'
+     },
+    {
+      title: 'Pembayaran ke MC',
+       desc: 'Pembeli mentransfer dana beserta biaya layanan ke rekening atau metode pembayaran yang disediakan oleh MC.',
+       img: 'assets/images/carakerja/step2.webp'
+     },
+   {
+     title: 'Verifikasi Dana',
+       desc: 'MC memverifikasi pembayaran yang masuk dan mengonfirmasi kepada penjual bahwa dana telah diterima dan siap diproses.',
+       img: 'assets/images/carakerja/step3.webp'
+     },
+   {
+     title: 'Penyerahan Produk',
+       desc: 'MC menginstruksikan penjual untuk menyerahkan barang atau akun digital kepada pembeli sesuai Kesepakatan',
+       img: 'assets/images/carakerja/step4.webp'
+     },
+   {
+    title: 'Konfirmasi Pembeli',
+       desc: 'Pembeli memeriksa produk yang diterima. Jika sesuai deskripsi, pembeli memberikan konfirmasi selesai kepada MC.',
+       img: 'assets/images/carakerja/step5.webp'
+     },
+   {
+     title: 'Pencairan Dana',
+       desc: 'Setelah konfirmasi diterima, MC mencairkan dana ke penjual. Transaksi dinyatakan berhasil dan selesai.',
+       img: 'assets/images/carakerja/step6.webp'
+     }
+   ];
+
+   // Preload semua gambar
+   ckData.forEach(item => {
+     const img = new Image();
+     img.src = item.img;
+   });
+
+    let ckCurrent = 0;
+    const ckStepperItems = document.querySelectorAll('.ck-stepper-item');
+    const ckGlassImg = document.getElementById('ckGlassImg');
+    const ckInfoTitle = document.getElementById('ckInfoTitle');
+    const ckInfoDesc = document.getElementById('ckInfoDesc');
+    const ckPrev = document.getElementById('ckPrev');
+    const ckNext = document.getElementById('ckNext');
+
+    function updateCk() {
+      const data = ckData[ckCurrent];
+
+      ckGlassImg.classList.remove('loaded');
+      setTimeout(() => {
+        ckGlassImg.src = data.img;
+        ckGlassImg.onload = () => ckGlassImg.classList.add('loaded');
+      }, 150);
+
+      ckInfoTitle.style.animation = 'none';
+      ckInfoDesc.style.animation = 'none';
+      void ckInfoTitle.offsetWidth;
+      ckInfoTitle.style.animation = '';
+      ckInfoDesc.style.animation = '';
+
+      ckInfoTitle.textContent = data.title;
+      ckInfoDesc.textContent = data.desc;
+
+      ckStepperItems.forEach((item, i) => {
+        item.classList.toggle('active', i === ckCurrent);
+      });
+    }
+
+    ckPrev.addEventListener('click', () => {
+      ckCurrent = (ckCurrent - 1 + ckData.length) % ckData.length;
+      updateCk();
+    });
+
+    ckNext.addEventListener('click', () => {
+      ckCurrent = (ckCurrent + 1) % ckData.length;
+      updateCk();
+    });
+
+   // Load gambar pertama saat halaman dibuka
+    ckGlassImg.src = ckData[0].img;
+    ckGlassImg.onload = () => ckGlassImg.classList.add('loaded');
+
+// ────────────────────────────────────────────────
+    // FEE ADMIN — SCROLL REVEAL STAGGER
+    // ────────────────────────────────────────────────
+    const feeCard = document.querySelector('.fee-fade');
+    const feeStaggerItems = document.querySelectorAll('.fee-stagger');
+
+    const feeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          feeCard.classList.add('visible');
+
+          feeStaggerItems.forEach((item, i) => {
+            setTimeout(() => {
+              item.classList.add('visible');
+            }, i * 120);
+          });
+
+          feeObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    if (feeCard) feeObserver.observe(feeCard);
+
+   // ────────────────────────────────────────────────
+    // SERVICE SLIDER
+    // ────────────────────────────────────────────────
+    const slider      = document.getElementById('serviceSlider');
+    const slides      = slider.querySelectorAll('.service-slide');
+    const totalSlides = slides.length;
+    let currentSlide  = 1;
+    let startX        = 0;
+    let isDragging    = false;
+    let dragDelta     = 0;
+
+    // Buat dots
+    const dotsWrapper = document.createElement('div');
+    dotsWrapper.className = 'slider-dots';
+    slides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = 'slider-dot' + (i === currentSlide ? ' active' : '');
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsWrapper.appendChild(dot);
+    });
+   // Buat tombol prev & next
+    const prevBtn = document.createElement('button');
+    prevBtn.innerHTML = '<i data-lucide="chevron-left" style="width:20px;height:20px;"></i>';
+    prevBtn.className = 'slider-nav-btn';
+
+    const nextBtn = document.createElement('button');
+    nextBtn.innerHTML = '<i data-lucide="chevron-right" style="width:20px;height:20px;"></i>';
+    nextBtn.className = 'slider-nav-btn';
+
+    prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+    nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+    const navWrapper = document.createElement('div');
+    navWrapper.className = 'slider-nav-wrapper';
+    navWrapper.appendChild(prevBtn);
+    navWrapper.appendChild(dotsWrapper);
+    navWrapper.appendChild(nextBtn);
+
+    slider.parentElement.appendChild(navWrapper);
+
+    function goToSlide(index) {
+      currentSlide = Math.max(0, Math.min(index, totalSlides - 1));
+      updateSlider();
+    }
+
+    function updateSlider() {
+      const slideWidth  = slides[0].offsetWidth + 20;
+      const wrapperWidth = slider.parentElement.offsetWidth;
+      const offset = (wrapperWidth / 2) - (slideWidth / 2) - (currentSlide * slideWidth);
+
+      slider.style.transform = `translateX(${offset}px)`;
+
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === currentSlide);
+      });
+
+         dotsWrapper.querySelectorAll('.slider-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    // Touch / drag
+    slider.addEventListener('mousedown', e => {
+      isDragging = true;
+       startX = e.clientX;
+      slider.style.transition = 'none';
+    });
+
+    slider.addEventListener('touchstart', e => {
+      startX = e.touches[0].clientX;
+      slider.style.transition = 'none';
+    }, { passive: true });
+
+    slider.addEventListener('mousemove', e => {
+      if (!isDragging) return;
+      dragDelta = e.clientX - startX;
+    });
+
+    slider.addEventListener('touchmove', e => {
+      dragDelta = e.touches[0].clientX - startX;
+    }, { passive: true });
+
+    slider.addEventListener('mouseup', () => {
+      isDragging = false;
+       slider.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+         if (dragDelta < -50) goToSlide(currentSlide + 1);
+         else if (dragDelta > 50) goToSlide(currentSlide - 1);
+       else updateSlider();
+      dragDelta = 0;
+    });
+
+    slider.addEventListener('touchend', () => {
+      slider.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+       if (dragDelta < -50) goToSlide(currentSlide + 1);
+         else if (dragDelta > 50) goToSlide(currentSlide - 1);
+       else updateSlider();
+      dragDelta = 0;
+    });
+
+    window.addEventListener('resize', updateSlider);
+    setTimeout(updateSlider, 100);
+
+   // ────────────────────────────────────────────────
+    // PRICING SLIDER
+    // ────────────────────────────────────────────────
+    const pricingTrack  = document.getElementById('pricingTrack');
+    const pricingSlides = pricingTrack.querySelectorAll('.pricing-slide');
+    const pricingDots   = document.getElementById('pricingDots');
+    const pricingPrev   = document.getElementById('pricingPrev');
+    const pricingNext   = document.getElementById('pricingNext');
+    let pricingCurrent  = 0;
+    let pricingDragStart = 0;
+    let pricingDragging  = false;
+    let pricingDelta     = 0;
+
+    // Buat dots
+    pricingSlides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = 'pricing-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => goToPricing(i));
+      pricingDots.appendChild(dot);
+    });
+
+    function goToPricing(index) {
+      pricingCurrent = Math.max(0, Math.min(index, pricingSlides.length - 1));
+      updatePricing();
+    }
+
+    function updatePricing() {
+      const slideWidth   = pricingSlides[0].offsetWidth + 24;
+      const wrapperWidth = pricingTrack.parentElement.offsetWidth;
+      const offset = (wrapperWidth / 2) - (slideWidth / 2) - (pricingCurrent * slideWidth);
+
+      pricingTrack.style.transform = `translateX(${offset}px)`;
+
+      pricingSlides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === pricingCurrent);
+      });
+
+      pricingDots.querySelectorAll('.pricing-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === pricingCurrent);
+      });
+
+      lucide.createIcons();
+    }
+
+    pricingPrev.addEventListener('click', () => goToPricing(pricingCurrent - 1));
+    pricingNext.addEventListener('click', () => goToPricing(pricingCurrent + 1));
+
+    // Touch drag
+    pricingTrack.addEventListener('mousedown', e => {
+      pricingDragging  = true;
+       pricingDragStart = e.clientX;
+      pricingTrack.style.transition = 'none';
+    });
+
+    pricingTrack.addEventListener('touchstart', e => {
+      pricingDragStart = e.touches[0].clientX;
+      pricingTrack.style.transition = 'none';
+    }, { passive: true });
+
+    pricingTrack.addEventListener('mousemove', e => {
+      if (!pricingDragging) return;
+      pricingDelta = e.clientX - pricingDragStart;
+    });
+
+    pricingTrack.addEventListener('touchmove', e => {
+      pricingDelta = e.touches[0].clientX - pricingDragStart;
+    }, { passive: true });
+
+    pricingTrack.addEventListener('mouseup', () => {
+      pricingDragging = false;
+       pricingTrack.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+         if (pricingDelta < -50) goToPricing(pricingCurrent + 1);
+         else if (pricingDelta > 50) goToPricing(pricingCurrent - 1);
+       else updatePricing();
+      pricingDelta = 0;
+    });
+
+    pricingTrack.addEventListener('touchend', () => {
+      pricingTrack.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+       if (pricingDelta < -50) goToPricing(pricingCurrent + 1);
+         else if (pricingDelta > 50) goToPricing(pricingCurrent - 1);
+       else updatePricing();
+      pricingDelta = 0;
+    });
+
+    window.addEventListener('resize', updatePricing);
+    setTimeout(updatePricing, 100);
+
+   // ────────────────────────────────────────────────
+    // FORCE SCROLL TO TOP ON REFRESH
+    // ────────────────────────────────────────────────
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+    });
+
+// ────────────────────────────────────────────────
+    // LIGHTBOX — expand card
+    // ────────────────────────────────────────────────
+    const lightboxOverlay = document.getElementById('lightboxOverlay');
+    const lightboxImg     = document.getElementById('lightboxImg');
+    const lightboxClose   = document.getElementById('lightboxClose');
+    let expandClickCount  = {};
+
+    document.querySelectorAll('.expand-card').forEach((card, idx) => {
+      expandClickCount[idx] = 0;
+
+      card.addEventListener('click', () => {
+        const isActive = card.classList.contains('active');
+
+        if (isActive) {
+          // Klik kedua — buka lightbox
+          const img = card.querySelector('img');
+          if (img) {
+            lightboxImg.src = img.src;
+            lightboxOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons();
+          }
+        } else {
+          // Klik pertama — expand card biasa
+          document.querySelectorAll('.expand-card').forEach(c => c.classList.remove('active'));
+          card.classList.add('active');
+        }
+      });
+    });
+
+    // Tutup lightbox via tombol X
+    lightboxClose.addEventListener('click', () => {
+      lightboxOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+
+    // Tutup lightbox via klik overlay
+    lightboxOverlay.addEventListener('click', (e) => {
+      if (e.target === lightboxOverlay) {
+        lightboxOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+
+// ────────────────────────────────────────────────
+    // TYPING ANIMATION — hero
+    // ────────────────────────────────────────────────
+    const typingTexts = [
+      'JB all game',
+      'Jasa Rekber Teraman',
+      'Jasa Topup Termurah',
+      'Jasa Pembuatan Website',
+      'Jasa Desain Grafis'
+    ];
+
+    const typingEl  = document.getElementById('typingText');
+    let textIndex   = 0;
+    let charIndex   = 0;
+    let isDeleting  = false;
+    let typingDelay = 100;
+
+    function typeLoop() {
+      const currentText = typingTexts[textIndex];
+
+      if (isDeleting) {
+        typingEl.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+        typingDelay = 50;
+      } else {
+        typingEl.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+        typingDelay = 100;
+      }
+
+      if (!isDeleting && charIndex === currentText.length) {
+        typingDelay = 1800;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % typingTexts.length;
+        typingDelay = 400;
+      }
+
+      setTimeout(typeLoop, typingDelay);
+    }
+
+    typeLoop();
+
+// ────────────────────────────────────────────────
+    // EXPAND CARDS — reset on touch outside
+    // ────────────────────────────────────────────────
+    const expandCards = document.querySelectorAll('.expand-card');
+
+    document.addEventListener('click', (e) => {
+      const isInsideExpandCards = e.target.closest('.expand-cards');
+      if (!isInsideExpandCards) {
+        expandCards.forEach(card => {
+          card.classList.remove('active');
+        });
+      }
+    });
+
+    document.addEventListener('touchstart', (e) => {
+      const isInsideExpandCards = e.target.closest('.expand-cards');
+      if (!isInsideExpandCards) {
+        expandCards.forEach(card => {
+          card.classList.remove('active');
+        });
+      }
+    }, { passive: true });
+
+    // ────────────────────────────────────────────────
+    // MICRO-INTERACTION: card tilt on mouse move (desktop)
+    // ────────────────────────────────────────────────
+    if (window.matchMedia('(hover: hover)').matches) {
+      document.querySelectorAll('.service-card, .review-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+           const x = ((e.clientX - rect.left) / rect.width - 0.5) * 6;
+           const y = ((e.clientY - rect.top)  / rect.height - 0.5) * 6;
+          card.style.transform = `translateY(-6px) rotateX(${-y}deg) rotateY(${x}deg)`;
+        });
+
+             card.addEventListener('mouseleave', () => {
+           card.style.transform = '';
+         });
+       });
+     }
+   </script>
+
+     </body>
+   </html>

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Blokir akses ke file yang tidak perlu diindex
+Disallow: /assets/
+Disallow: /*.json$
+
+Sitemap: https://xdear.vercel.app/sitemap.xml
