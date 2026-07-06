@@ -4,9 +4,22 @@ Landing page bisnis JB xdear store — platform jual beli akun game, jasa rekber
 
 ---
 
+## 📞 Kontak
+
+- **WhatsApp:** [+62 823-2487-2212](https://wa.me/6282324872212)
+- **Instagram:** @xdear_store
+
+---
+
+## 📝 Lisensi
+
+[MIT License](LICENSE) © 2025 xdear store
+
+---
+
 ## 🌐 Live Demo
 
-[https:https://xdear.vercel.app
+https://xdear.vercel.app
 
 ---
 
@@ -82,9 +95,3 @@ xdear-landing-page/
     │   ├── own/
     │   ├── pt/
     │   └── payment/
-
-📞 Kontak
-WhatsApp: +62 823-2487-2212
-
-📝 Lisensi
-MIT License © 2025 xdear store
