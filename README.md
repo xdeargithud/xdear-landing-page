@@ -19,7 +19,7 @@ Landing page bisnis JB xdear store — platform jual beli akun game, jasa rekber
 
 ## 🌐 Live Demo
 
-https://xdear.vercel.app
+https://jbxdearstore.vercel.app
 
 ---
 
