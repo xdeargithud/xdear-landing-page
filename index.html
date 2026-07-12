@@ -72,6 +72,109 @@
       --font: 'Poppins', system-ui, -apple-system, sans-serif;
     }
 
+   /* ============================================================
+      INTRO OPENING ANIMATION
+      Timeline (total 3.3s): masuk 0-0.9s, hold 0.9-1.8s,
+      keluar 1.8-2.7s, overlay fade 2.7-3.3s
+    ============================================================ */
+    html.intro-lock,
+    html.intro-lock body {
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .intro-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: introOverlayFade 3.9s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .intro-overlay.intro-hidden {
+      display: none;
+    }
+
+    .intro-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(14px, 3vw, 26px);
+    }
+
+    .intro-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(1px, 3vw, 150px);
+    }
+
+    .intro-asset {
+      display: block;
+      opacity: 0;
+    }
+
+    .intro-logo {
+      width: clamp(70px, 16vw, 110px);
+      height: auto;
+      animation: introFromTop 3.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .intro-xdear {
+      width: clamp(90px, 20vw, 150px);
+      height: auto;
+      animation: introFromLeft 3.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .intro-store {
+      width: clamp(90px, 20vw, 150px);
+      height: auto;
+      animation: introFromRight 3.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .intro-slogan {
+      width: clamp(140px, 40vw, 260px);
+      height: auto;
+      animation: introFromBottom 3.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+      
+@keyframes introFromTop {
+  0%      { transform: translateY(-30px); opacity: 0; filter: blur(14px); }
+  31.25%  { transform: translateY(0);     opacity: 1; filter: blur(0); }
+  68.75%  { transform: translateY(0);     opacity: 1; filter: blur(0); }
+  100%    { transform: translateY(-30px); opacity: 0; filter: blur(14px); }
+  }
+
+@keyframes introFromLeft {
+  0%      { transform: translateX(-30px); opacity: 0; filter: blur(14px); }
+  31.25%  { transform: translateX(0);      opacity: 1; filter: blur(0); }
+  68.75%  { transform: translateX(0);      opacity: 1; filter: blur(0); }
+  100%    { transform: translateX(-30px); opacity: 0; filter: blur(14px); }
+  }
+
+@keyframes introFromRight {
+  0%      { transform: translateX(30px); opacity: 0; filter: blur(14px); }
+  31.25%  { transform: translateX(0);     opacity: 1; filter: blur(0); }
+  68.75%  { transform: translateX(0);     opacity: 1; filter: blur(0); }
+  100%    { transform: translateX(30px); opacity: 0; filter: blur(14px); }
+  }
+
+@keyframes introFromBottom {
+  0%      { transform: translateY(30px); opacity: 0; filter: blur(14px); }
+  31.25%  { transform: translateY(0);     opacity: 1; filter: blur(0); }
+  68.75%  { transform: translateY(0);     opacity: 1; filter: blur(0); }
+  100%    { transform: translateY(30px); opacity: 0; filter: blur(14px); }
+  }
+
+@keyframes introOverlayFade {
+  0%     { opacity: 1; }
+  82.05% { opacity: 1; }
+  100%   { opacity: 0; pointer-events: none; }
+  }
+
    /* =========================
    POPPINS FONT FAMILY
    ========================= */
@@ -2986,6 +3089,20 @@
    <body>
 
    <!-- ============================================================
+       INTRO OPENING ANIMATION
+   ============================================================ -->
+   <div class="intro-overlay" id="introOverlay">
+     <div class="intro-stage">
+       <img src="assets/images/intro/logo.png" alt="Logo" class="intro-asset intro-logo">
+       <div class="intro-row">
+         <img src="assets/images/intro/xdear.png" alt="xdear" class="intro-asset intro-xdear">
+         <img src="assets/images/intro/store.png" alt="store" class="intro-asset intro-store">
+       </div>
+       <img src="assets/images/intro/slogan.png" alt="Slogan" class="intro-asset intro-slogan">
+     </div>
+   </div>
+      
+   <!-- ============================================================
        NAVBAR
    ============================================================ -->
    <nav id="navbar">
@@ -4616,6 +4733,18 @@
        JAVASCRIPT
    ============================================================ -->
     <script>
+
+    // INTRO OPENING ANIMATION: cleanup setelah overlay fade out selesai
+    // ────────────────────────────────────────────────
+    const introOverlay = document.getElementById('introOverlay');
+    if (introOverlay) {
+      introOverlay.addEventListener('animationend', (e) => {
+        if (e.target !== introOverlay) return; // pastikan bukan animasi child (logo/xdear/dll)
+        introOverlay.classList.add('intro-hidden');
+        document.documentElement.classList.remove('intro-lock');
+      });
+    }
+       
     // ────────────────────────────────────────────────
     // NAVBAR: scroll effect + active link highlight
     // ────────────────────────────────────────────────
